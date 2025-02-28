@@ -3,9 +3,9 @@ import Topplots2 from './Topplots2'
 
 const Park = () => {
     return (
-        <div className='pt-10 mt-5'>
+        <div className='pt-10 mt-5 '>
             <div className='park w-64 h-72 bg-green-500 flex items-center ml-15  '>
-                <p className='pl-10 pt-15 text-2xl'> park</p>
+                <p className='pl-10 pt-15 text-2xl'> PARK</p>
             </div>
             {/* Road  */}
             <div className=" right-[23%] bottom-[45%] absolute font-bold ">

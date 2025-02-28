@@ -61,7 +61,7 @@ const Topplots1 = () => {
 
     return (
         <>
-            <section className="flex justify-center pl-10">
+            <section className="flex justify-center pl-10 h-fit ">
                 <div className="left-[48%] top-[27%] rotate-270 absolute font-bold">
                     <p>12.00 M WIDE ROAD</p>
                 </div>
@@ -87,7 +87,7 @@ const Topplots1 = () => {
                 </div>
                 <Park />
             </section>
-            <Topplots6 />
+                <Topplots6 />
 
             {showForm && (
                 <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">

@@ -62,8 +62,8 @@ const Topplots3 = () => {
     };
 
     return (
-        <section className='pr-20 pl-32'>
-            <div className="flex">
+        <section className='pr-20 pl-32 h-fit'>
+            <div className="flex ">
                 <div className="mt-28 pt-2">
                     {plotsColumn1.map((plot) => (
                         <div key={plot.number}

@@ -48,7 +48,7 @@ const Topplots4 = () => {
     };
 
     return (
-        <section>
+        <section className='h-fit'>
             {/* Road Label */}
             <div className="absolute right-[64.5%] top-[27%] rotate-270 font-bold">
                 <p>9.00 M WIDE ROAD</p>

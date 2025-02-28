@@ -65,7 +65,7 @@ const Topplots5 = () => {
     };
 
     return (
-        <section>
+        <section className='h-fit'>
             <div className="left-[36.5%] top-[27%] rotate-270 absolute font-bold">
                 <p>9.00 M WIDE ROAD</p>
             </div>

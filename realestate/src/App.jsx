@@ -54,10 +54,10 @@ const App = () => {
             <div className="text-center font-bold my-5 border-t-2 border-b-2 p-1 ">
                 <p>9.00 M WIDE ROAD</p>
             </div>
-            <div className=" mt-10  flex justify-center pl-92 ml-2  ">
+            <div className=" mt-10  flex justify-center pl-28 ml-1  ">
                 {/* park */}
                 <div className="">
-                    <div className='park2 w-52 h-32 bg-green-500 flex items-center absolute top-[136.5%] left-[28%]'>
+                    <div className='park2 w-52 h-32 bg-green-500 mt-1 flex items-center mr-10 '>
                         <p className='pl-32 pb-10 text-2xl'>PARK</p>
                     </div>
                 </div>

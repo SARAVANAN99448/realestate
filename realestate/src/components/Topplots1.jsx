@@ -76,7 +76,7 @@ const Topplots1 = () => {
                                 .map((plot) => (
                                     <div
                                         key={plot.id}
-                                        className={`w-10 border-3 border-black flex justify-center items-center cursor-pointer ${plot.height} ${plot.mt || ""} ${plot.color} ${plot.extraClass || ""}`}
+                                        className={`md:w-10 w-7 border-3 border-black flex justify-center items-center cursor-pointer ${plot.height} ${plot.mt || ""} ${plot.color} ${plot.extraClass || ""}`}
                                         onClick={() => handlePlotClick(plot.id)}
                                     >
                                         <p className="text-pink-500">{plot.id}</p>

@@ -80,14 +80,14 @@ const Topplots6 = () => {
             <div>
                 <div className="flex">
                     {row1.map(({ num, bg }) => (
-                        <div key={num} className={`${bg} w-9.5 h-13 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
+                        <div key={num} className={`${bg} md:w-9.5 w-6.5 h-13 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
                              <p className="text-pink-500">{num}</p>
                         </div>
                     ))}
                 </div>
                 <div className="flex">
                     {row2.map(({ num, bg }) => (
-                        <div key={num} className={`${bg} w-9.5 h-13 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
+                        <div key={num} className={`${bg} md:w-9.5 w-6.5 h-13 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
                              <p className="text-pink-500">{num}</p>
                         </div>
                     ))}

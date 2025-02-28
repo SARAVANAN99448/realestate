@@ -12,14 +12,14 @@ const row1 = [
   ];
 
 const row2 = [
-    { number: 141, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 140, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 139, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 138, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 137, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 136, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 135, className: "bg-[#9c4e1a] w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
-    { number: 134, className: "bg-[#9c4e1a] w-20 h-10 border-3 border-black flex justify-center items-center topplots2 cursor-pointer" },
+    { number: 141, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 140, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 139, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 138, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 137, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 136, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 135, className: "bg-[#9c4e1a] md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer" },
+    { number: 134, className: "bg-[#9c4e1a] md:w-20 w-7 h-10 border-3 border-black flex justify-center items-center topplots2 cursor-pointer" },
   ];
 
 const Topplots2 = () => {

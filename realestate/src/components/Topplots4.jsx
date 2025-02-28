@@ -58,7 +58,7 @@ const Topplots4 = () => {
                 <div>
                     {column1.map((num) => (
                         <div key={num}
-                            className="bg-pink-300 w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer"
+                            className="bg-pink-300 md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer"
                             onClick={() => handleOpenForm(num)}
                         >
                              <p className="text-pink-500">{num}</p>
@@ -69,7 +69,7 @@ const Topplots4 = () => {
                 <div>
                     {column2.map((num) => (
                         <div key={num}
-                            className="bg-pink-300 w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer"
+                            className="bg-pink-300 md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer"
                             onClick={() => handleOpenForm(num)}
                         >
                              <p className="text-pink-500">{num}</p>

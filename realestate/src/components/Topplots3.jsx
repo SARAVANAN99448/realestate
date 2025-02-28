@@ -67,7 +67,7 @@ const Topplots3 = () => {
                 <div className="mt-28 pt-2">
                     {plotsColumn1.map((plot) => (
                         <div key={plot.number}
-                            className={`${plot.bgColor} w-10 ${plot.height} border-3 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
+                            className={`${plot.bgColor} md:w-10 w-7  ${plot.height} border-3 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
                             onClick={() => handleOpenForm(plot.number)}
                         >
                             <p className='text-pink-500'>{plot.number}</p>
@@ -78,7 +78,7 @@ const Topplots3 = () => {
                 <div>
                     {plotsColumn2.map((plot) => (
                         <div key={plot.number}
-                            className={`${plot.bgColor} w-10 ${plot.height} border-3 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
+                            className={`${plot.bgColor} md:w-10 w-7 ${plot.height} border-3 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
                             onClick={() => handleOpenForm(plot.number)}
                         >
                             <p className='text-pink-500'>{plot.number}</p>

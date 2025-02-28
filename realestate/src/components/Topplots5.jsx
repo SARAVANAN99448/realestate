@@ -72,7 +72,7 @@ const Topplots5 = () => {
             <div className="flex pr-10">
                 <div>
                     {column1.map(({ num, bg }) => (
-                        <div key={num} className={`${bg} w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
+                        <div key={num} className={`${bg} md:w-10 w-7 h-10 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
                              <p className="text-pink-500">{num}</p>
                         </div>
                     ))}
@@ -80,7 +80,7 @@ const Topplots5 = () => {
 
                 <div>
                     {column2.map(({ num, bg }) => (
-                        <div key={num} className={`${bg} w-13 h-[16.6%] border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
+                        <div key={num} className={`${bg} md:w-13 w-10 h-[16.6%] border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
                              <p className="text-pink-500">{num}</p>
                         </div>
                     ))}

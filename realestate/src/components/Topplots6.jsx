@@ -47,11 +47,7 @@ const Topplots6 = () => {
         setShowForm(true);
     };
 
-    const handleCloseForm = () => {
-        setShowForm(false);
-        setSelectedPlot(null);
-        setFormData({ name: "", email: "", mobile: "", message: "" });
-    };
+    
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -65,7 +61,8 @@ const Topplots6 = () => {
                 ...formData,
             });
             alert("Inquiry submitted successfully!");
-            handleCloseForm();
+            setShowForm(false);
+            setFormData({ name: '', email: '', mobile: '', message: '' })
         } catch (error) {
             console.error("Erroradding document:", error);
             alert("Failed to submit inquiry.");
@@ -73,38 +70,48 @@ const Topplots6 = () => {
     };
 
     return (
-        <section className="pl-32 absolute top-[56%] left-[13.5%]">
-            <div className="right-[27%] bottom-[120%] absolute font-bold">
-                <p>9.00 M WIDE ROAD</p>
+        <section className="md:pl-32 absolute md:top-[76%] md:left-[12%] top-[60%] pl-2">
+            <div className="md:right-[20%] md:bottom-[123%] bottom-[105%] right-[30%] absolute font-bold">
+                <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             <div>
                 <div className="flex">
                     {row1.map(({ num, bg }) => (
-                        <div key={num} className={`${bg} md:w-9.5 w-6.5 h-13 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
-                             <p className="text-pink-500">{num}</p>
+                        <div key={num} className={`${bg} md:w-8 w-6 md:h-13 h-10 md:border-1 border-1 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
+                            <p className="text-pink-500 md:text-sm text-[10px]">{num}</p>
                         </div>
                     ))}
                 </div>
                 <div className="flex">
                     {row2.map(({ num, bg }) => (
-                        <div key={num} className={`${bg} md:w-9.5 w-6.5 h-13 border-3 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
-                             <p className="text-pink-500">{num}</p>
+                        <div key={num} className={`${bg} md:w-8 w-6 md:h-13 h-10 md:border-1 border-1 border-black flex justify-center items-center cursor-pointer`} onClick={() => handleOpenForm(num)}>
+                            <p className="text-pink-500 md:text-sm text-[10px]">{num}</p>
                         </div>
                     ))}
                 </div>
             </div>
 
             {showForm && (
-                <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-white p-6 rounded-lg shadow-lg w-[400px]">
-                        <h2 className="text-lg font-bold mb-4">Contact for Plot {selectedPlot}</h2>
-                        <form onSubmit={handleSubmit}>
-                            <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} className="block border p-2 mb-2 w-full" required />
-                            <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} className="block border p-2 mb-2 w-full" required />
-                            <input type="tel" name="mobile" placeholder="Your Mobile" value={formData.mobile} onChange={handleChange} className="block border p-2 mb-2 w-full" required />
-                            <textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} className="block border p-2 mb-2 w-full" required />
-                            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
-                            <button type="button" onClick={handleCloseForm} className="text-red-500 ml-4">Close</button>
+                <div className="fixed top-0 left-0 md:w-full md:h-full w-[390px] h-[800px]   flex items-center justify-center bg-black bg-opacity-50 z-50">
+                    <div className="bg-white md:p-6 p-10  rounded-lg shadow-lg md:w-[400px] w-[300px]">
+                        <h2 className="text-lg font-bold mb-4 text-center">Contact for Plot {selectedPlot}</h2>
+                        <form onSubmit={handleSubmit} className="space-y-3">
+                            <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange}
+                                className="block border border-gray-400 p-2 w-full rounded-md" required />
+
+                            <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange}
+                                className="block border border-gray-400 p-2 w-full rounded-md" required />
+
+                            <input type="tel" name="mobile" placeholder="Your Mobile" value={formData.mobile} onChange={handleChange}
+                                className="block border border-gray-400 p-2 w-full rounded-md" required />
+
+                            <textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange}
+                                className="block border border-gray-400 p-2 w-full rounded-md h-24" required />
+
+                            <div className="flex justify-between">
+                                <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Submit</button>
+                                <button type="button" onClick={() => setShowForm(false)} className="text-red-500">Close</button>
+                            </div>
                         </form>
                     </div>
                 </div>

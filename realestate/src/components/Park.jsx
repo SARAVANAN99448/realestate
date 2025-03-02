@@ -4,16 +4,16 @@ import Topplots2 from './Topplots2'
 const Park = () => {
     return (
         <div className='pt-10 mt-5 '>
-            <div className='park w-64 h-72 bg-green-500 flex items-center ml-15  '>
-                <p className='pl-10 pt-15 text-2xl'> PARK</p>
+            <div className='park md:w-64 md:h-72 h-60 bg-green-500 flex items-center ml-10 md:ml-15  '>
+                <p className='pl-10 pt-15 md:text-2xl text-xl'> PARK</p>
             </div>
             {/* Road  */}
-            <div className=" right-[23%] bottom-[45%] absolute font-bold ">
-                <p>9.00 M WIDE ROAD</p>
+            <div className=" md:right-[23%] right-[-38%]  md:bottom-[23%] bottom-[42%] absolute font-bold ">
+                <p className='md:text-[16px] text-[12px]'>9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className=" right-[33%] top-[27%] rotate-270 absolute font-bold ">
-                <p>9.00 M WIDE ROAD</p>
+            <div className=" right-[-11%] md:top-[40%] top-[35%]  md:right-[33.5%] rotate-270 absolute font-bold ">
+                <p className='md:text-[16px] text-[12px]'>9.00 M WIDE ROAD</p>
             </div>
 
             <Topplots2 />

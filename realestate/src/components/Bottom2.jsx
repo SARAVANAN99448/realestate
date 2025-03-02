@@ -50,10 +50,10 @@ const Bottom2 = () => {
                     {column.map((num) => (
                         <div
                             key={num}
-                            className={`${getColors11(num)} w-10 h-10 border-3 border-black flex justify-center items-center cursor-pointer`}
+                            className={`${getColors11(num)} md:w-10 w-7 h-10 md:border-1 border-1 border-black flex justify-center items-center cursor-pointer`}
                             onClick={() => handlePlotClick(num)}
                         >
-                            <p className="text-pink-500">{num}</p>
+                            <p className="text-pink-500 md:text-sm text-[10px]">{num}</p>
                         </div>
                     ))}
                 </div>

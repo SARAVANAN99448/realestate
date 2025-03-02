@@ -62,15 +62,15 @@ const Topplots3 = () => {
     };
 
     return (
-        <section className='pr-20 pl-32 h-fit'>
+        <section className='md:pr-10 md:pl-32 pl-60 pr-10 h-fit'>
             <div className="flex ">
-                <div className="mt-28 pt-2">
+                <div className="md:mt-28 mt-28 pt-2">
                     {plotsColumn1.map((plot) => (
                         <div key={plot.number}
-                            className={`${plot.bgColor} md:w-10 w-7  ${plot.height} border-3 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
+                            className={`${plot.bgColor} md:w-10 w-7  ${plot.height} md:md:border-1 border-1 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
                             onClick={() => handleOpenForm(plot.number)}
                         >
-                            <p className='text-pink-500'>{plot.number}</p>
+                            <p className='text-pink-500 md:text-sm text-[10px]'>{plot.number}</p>
                         </div>
                     ))}
                 </div>
@@ -78,10 +78,10 @@ const Topplots3 = () => {
                 <div>
                     {plotsColumn2.map((plot) => (
                         <div key={plot.number}
-                            className={`${plot.bgColor} md:w-10 w-7 ${plot.height} border-3 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
+                            className={`${plot.bgColor} md:w-10 w-7 ${plot.height} md:border-1 border-1 border-black flex justify-center items-center cursor-pointer ${plot.extraClass}`}
                             onClick={() => handleOpenForm(plot.number)}
                         >
-                            <p className='text-pink-500'>{plot.number}</p>
+                            <p className='text-pink-500 md:text-sm text-[10px]'>{plot.number}</p>
                         </div>
                     ))}
                 </div>
@@ -89,8 +89,8 @@ const Topplots3 = () => {
 
             {/* Contact Form */}
             {showForm && (
-                <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-white p-6 rounded-lg shadow-lg w-[400px]">
+                <div className="fixed top-0 left-0 md:w-full md:h-full w-[390px] h-[800px]   flex items-center justify-center bg-black bg-opacity-50 z-50">
+                    <div className="bg-white md:p-6 p-10  rounded-lg shadow-lg md:w-[400px] w-[300px]">
                         <h2 className="text-lg font-bold mb-4 text-center">Contact for Plot {selectedPlot}</h2>
                         <form onSubmit={handleSubmit} className="space-y-3">
                             <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange}

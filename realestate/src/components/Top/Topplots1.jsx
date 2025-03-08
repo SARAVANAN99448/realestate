@@ -41,7 +41,7 @@ const Topplots1 = () => {
         <><Hero />
             <h1 className="text-2xl md:text-3xl font-bold text-center text-[#fb9906] mb-2 mt-10">Plots for booking</h1>
             <hr className="w-16 border-green-700 mx-auto mb-4" />
-            <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5">
+            <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5 overflow-visible ">
                 <div className="md:left-[44.5%] left-[59%] md:top-[68%] top-[35%] rotate-270 absolute font-bold">
                     <p className="md:text-[16px] text-[12px]">12.00 M WIDE ROAD</p>
                 </div>

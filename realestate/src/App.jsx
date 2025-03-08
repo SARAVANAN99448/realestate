@@ -22,7 +22,7 @@ import DownloadButton from "./components/Download";
 
 const App = () => {
     return (<>
-        <section className="relative">
+        <section className="relative overflow-visible ">
             
             <Topplots1 />
             <section className=" ">

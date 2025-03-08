@@ -49,7 +49,7 @@ const LocationAdvantages = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto p-6">
+    <section className="max-w-6xl mx-auto p-6 overflow-hidden">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-[#fb9906] mb-2">
         Location Advantages
       </h2>

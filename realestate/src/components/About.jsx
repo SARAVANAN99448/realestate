@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="w-full flex justify-center py-16 px-6">
+    <section className="w-full flex justify-center py-16 px-6 overflow-hidden">
       <div className="bg-green-900 text-white max-w-6xl w-full rounded-xl shadow-lg p-15 text-center">
         <h2 className="text-4xl text-[#fb9906] font-bold mb-6">About Us</h2>
         <p className="text-lg leading-relaxed">

@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section className="w-full max-w-5xl mx-auto p-6">
+    <section className="w-full max-w-5xl mx-auto p-6 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Left Side - Google Map */}
         <div>

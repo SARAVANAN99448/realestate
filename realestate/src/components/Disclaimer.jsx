@@ -1,6 +1,6 @@
 const Disclaimer = () => {
     return (
-      <footer className="w-full bg-green-900 text-gray-200 text-center py-4 px-6 text-sm">
+      <footer className="w-full bg-green-900 text-gray-200 text-center py-4 px-6 text-sm overflow-hidden">
         <p>
           Disclaimer: The information provided on this website is for general informational purposes only. 
           While we strive to keep the content accurate and up-to-date, we make no warranties or guarantees 

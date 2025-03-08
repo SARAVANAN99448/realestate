@@ -32,7 +32,7 @@ const Amenities = () => {
   };
 
   return (
-    <section className="max-w-5xl mx-auto p-6">
+    <section className="max-w-5xl mx-auto p-6 overflow-hidden">
       <h2 className="text-2xl font-bold text-center text-[#fb9906] mb-2">Amenities</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
 

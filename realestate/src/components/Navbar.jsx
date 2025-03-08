@@ -5,7 +5,8 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-5xl flex justify-between items-center px-6 py-4 z-30">
+    <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-30 bg-transparent">
+
       {/* Left - Logo/Icon */}
       <div className="text-white text-2xl">Swarnagiri</div>
 

@@ -47,3 +47,22 @@ body {
 .for223{
   clip-path: polygon(0% 100%, 110% -1010%, 100% 100%, 0% 100%);
 }
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}

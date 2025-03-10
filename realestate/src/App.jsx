@@ -22,13 +22,13 @@ import DownloadButton from "./components/Download";
 
 const App = () => {
     return (<>
-        <section className="relative overflow-visible ">
-            
+        <section className="relative  " >
+
             <Topplots1 />
-            <section className=" ">
+            <section className="overflow-x-auto ">
                 {/* Main road */}
                 <Mainroad />
-                <div className="flex justify-center md:ml-0 ml-68 md:pl-0 pl-7 relative">
+                <div className="flex justify-center md:ml-0 ml-68 md:pl-0 pl-7 relative ">
                     <Bottom1 />
                     <Bottom2 />
                     <Bottom3 />
@@ -36,30 +36,19 @@ const App = () => {
                     <Bottom5 />
                     <Bottom6 />
                     <Bottom7 />
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[45%] top-[100%] md:left-[28.5%] left-[23.5%] font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[45%] top-[100%] md:left-[37.3%] left-[47.5%]  font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[45%] top-[100%] md:left-[45.5%] left-[71%] md:ml-2 font-bold">
-                        <p className="md:text-[16px] text-[12px]">12.00 M WIDE ROAD</p>
-                    </div>
-                    {/* Road  */}
-                    <div className="rotate-270 absolute md:top-[45%] top-[100%] md:right-[34%] right-[-23%]  md:ml-2  font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[45%] top-[100%] md:right-[25%] right-[-47%] font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
                 </div>
                 {/* center road */}
-                <div className="text-center font-bold my-5 border-t-2 border-b-2 md:p-1 p-3 md:w-full w-[1000px] ">
-                    <p className='text-start pl-28 ml-2 md:text-center'>9.00 M WIDE ROAD</p>
+                <div className="relative my-10 text-center mx-auto w-full max-w-5xl">
+                    {/* Road Background */}
+                    <div className="relative w-full h-16 bg-black rounded-md flex items-center justify-center">
+                        {/* Center White Dashed Line */}
+                        <div className="absolute top-1/2 left-0 w-full border-t-[5px] border-dashed border-white transform -translate-y-1/2"></div>
+
+                        {/* MAIN ROAD Text */}
+                        <p className="relative text-white font-extrabold text-[16px] md:text-xl tracking-wide bg-black px-4">
+                        9.00 M WIDE ROAD
+                        </p>
+                    </div>
                 </div>
                 <div className=" mt-10  flex justify-center md:pl-28 md:ml-1  pl-72 ml-16 ">
                     {/* park */}
@@ -68,39 +57,19 @@ const App = () => {
                             <p className='md:pl-32 md:pb-10  md:text-2xl text-xl pl-18 pb-10'>PARK</p>
                         </div>
                     </div>
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[83.7%] top-[100%] md:right-[16%] right-[-72%] font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
                     <Bottom8 />
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[93%] top-[155%] md:left-[45.4%] left-[70%] font-bold">
-                        <p className="md:text-[16px] text-[12px]"> 12.00 M WIDE ROAD</p>
-                    </div>
                     <Bottom9 />
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[93%] top-[155%] right-[-24%] md:right-[33.7%] font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
                     <Bottom10 />
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[93%] top-[155%] right-[-48%] md:right-[24.8%] font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
                     <Bottom11 />
-                    {/* Road  */}
-                    <div className="   rotate-270 absolute md:top-[93%] top-[155%] right-[-73%] md:right-[16%] font-bold">
-                        <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
-                    </div>
                     <Bottom12 />
                 </div>
             </section>
         </section>
-        <EnquireNow/>
-        <DownloadButton/>
+        <EnquireNow />
+        <DownloadButton />
         <About />
         <ContactSection />
-        <Disclaimer/>
+        <Disclaimer />
     </>
     );
 };

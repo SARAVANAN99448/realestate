@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 const Mainroad = () => {
     return (
-        <div className=" my-10 text-3xl text-center border-t-2 border-b-2 md:p-10 p-2 md:w-full w-[1000px] ">
-            <p className='text-start pl-28 md:text-center'>MAIN ROAD</p>
-        </div>
-    )
-}
+        <div className="relative my-10 text-center mx-auto w-full max-w-5xl">
+            {/* Road Background */}
+            <div className="relative w-full h-16 bg-black rounded-md flex items-center justify-center">
+                {/* Center White Dashed Line */}
+                <div className="absolute top-1/2 left-0 w-full border-t-[5px] border-dashed border-white transform -translate-y-1/2"></div>
 
-export default Mainroad
+                {/* MAIN ROAD Text */}
+                <p className="relative text-white font-extrabold  md:text-xl text-[16px] tracking-wide bg-black px-4">
+                    MAIN ROAD
+                </p>
+            </div>
+        </div>
+    );
+};
+
+export default Mainroad;

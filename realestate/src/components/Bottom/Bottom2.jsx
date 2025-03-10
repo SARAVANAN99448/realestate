@@ -6,7 +6,7 @@ const columns11 = [
     [123, 124, 125, 126],
     [122, 121, 120, 119]
 ];
-const soldPlots = [123, 120];
+const soldPlots = [];
 const getColors11 = (num) => {
     if ([123, 122].includes(num)) return "bg-[#9c4e1a]";
     if ([124, 125, 126, 121, 120, 119].includes(num)) return "bg-pink-300";
@@ -21,9 +21,10 @@ const Bottom2 = () => {
         navigate("/contact", { state: { plotNumber } });
     };
     return (
-        <div className="flex">
+        <div className="flex relative">
+            
             {columns11.map((column, colIndex) => (
-                <div key={colIndex} className={`mt-1 ${colIndex === 1 ? 'mr-10' : ''}`}>
+                <div key={colIndex} className={`mt-1 ${colIndex === 1 ? 'pr-10' : ''}`}>
                     {column.map((num) => {
                         const isSold = soldPlots.includes(num);
                         return (

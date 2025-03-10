@@ -1,18 +1,43 @@
-import React from "react";
+import React from 'react';
+import { Building, CheckCircle, Users, Trophy, BarChart } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="w-full flex justify-center py-16 px-6 overflow-hidden">
-      <div className="bg-green-900 text-white max-w-6xl w-full rounded-xl shadow-lg p-15 text-center">
-        <h2 className="text-4xl text-[#fb9906] font-bold mb-6">About Us</h2>
-        <p className="text-lg leading-relaxed">
-          Welcome to our premium real estate project, offering a serene and 
-          luxurious living experience in the heart of nature. Nestled amidst 
-          lush green hills, our property provides the perfect balance of 
-          modern amenities and tranquil surroundings.
-        </p>
+    <div className="max-w-6xl mx-auto py-16 px-4  text-[13px] md:text-[14px]">
+      {/* About Heading */}
+      <h2 className="text-3xl font-bold flex items-center">
+        <span className="w-2 h-8 bg-green-600 mr-2"></span> About Swarnagiri's
+      </h2>
+
+      {/* Description */}
+      <p className="mt-4 text-gray-700">
+        Swarnagiri's, since 1989, crafts homes with intellect and passion, striving for architectural brilliance and value-for-price.
+        Our customer-centric ethos, built on trust, quality, and transparency, is reinforced through
+        <span className="font-semibold"> 1275+ quality checks</span>, guaranteeing impeccable projects with ethical practices.
+      </p>
+
+      {/* Tagline */}
+      <p className="mt-2 text-green-600 font-semibold">
+      Swarnagiri's - For those who will not settle for something cheap.
+      </p>
+
+      {/* Statistics Boxes */}
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mt-8">
+        {[
+          { number: '125+', label: 'Projects', icon: <Building size={40} className="text-green-600" /> },
+          { number: '1275+', label: 'Quality Checks', icon: <CheckCircle size={40} className="text-green-600" /> },
+          { number: '3400+', label: 'Happy Customers', icon: <Users size={40} className="text-green-600" /> },
+          { number: '60+', label: 'Awards', icon: <Trophy size={40} className="text-green-600" /> },
+          { number: '35', label: 'Years in Business', icon: <BarChart size={40} className="text-green-600" /> }
+        ].map((item, index) => (
+          <div key={index} className="border border-green-600 p-4 text-center rounded-md ">
+            <div className="flex justify-center ">{item.icon}</div>
+            <h3 className="text-2xl font-bold text-green-600  text-[13px] md:text-[14px]">{item.number}</h3>
+            <p className="text-gray-700">{item.label}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

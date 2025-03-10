@@ -23,7 +23,7 @@ const plotStyles = {
     88: "md:w-10 w-7 h-10",
     87: "md:w-10 w-7 h-10"
 };
-const soldPlots = [93, 89];
+const soldPlots = [];
 const Bottom4 = () => {
     const navigate = useNavigate();
 

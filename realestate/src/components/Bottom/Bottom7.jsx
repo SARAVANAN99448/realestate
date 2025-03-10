@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const s6 = [1, 2, 3, 4];
-const soldPlots = [2, 4]
+const soldPlots = []
 const Bottom7 = () => {
     const navigate = useNavigate();
 

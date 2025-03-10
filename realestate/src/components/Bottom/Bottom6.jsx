@@ -11,7 +11,7 @@ const getColors7 = (num) => {
     if ([29, 28].includes(num)) return "bg-[#e3d91f]";
     return "bg-pink-300";
 };
-const soldPlots = [31, 29];
+const soldPlots = [];
 const Bottom6 = () => {
     const navigate = useNavigate();
 

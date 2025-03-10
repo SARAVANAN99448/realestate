@@ -29,7 +29,7 @@ const row2 = [
     { num: 167, bg: "bg-[#9c4e1a]" },
 ];
 
-const soldPlots = [178, 188, 170];
+const soldPlots = [];
 const Topplots6 = () => {
     const navigate = useNavigate();
     const handlePlotClick = (plotNumber) => {
@@ -38,8 +38,8 @@ const Topplots6 = () => {
     };
 
     return (
-        <section className="md:pl-32 absolute md:top-[73.75%] md:left-[12%] top-[60%] pl-2">
-            <div className="md:right-[20%] md:bottom-[123%] bottom-[105%] right-[30%] absolute font-bold">
+        <section className="md:pl-32 pl-60 pt-20 relative mt-0">
+            <div className="md:right-[20%] md:bottom-[70%] bottom-[70%] right-[20%] absolute font-bold">
                 <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             <div>

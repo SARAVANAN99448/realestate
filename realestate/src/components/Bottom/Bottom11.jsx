@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const firstColumnNumbers2 = [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45];
 const secondColumnNumbers2 = [26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16];
-const soldPlots = [35];
+const soldPlots = [];
 const Bottom11 = () => {
     const navigate = useNavigate();
 

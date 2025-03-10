@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const soldPlots = [211, 210, 208];
+const soldPlots = [];
 const column1 = [211, 212, 213, 214, 215, 216, 217, 218];
 const column2 = [210, 209, 208, 207, 206, 205, 204, 203];
 
@@ -16,12 +16,7 @@ const Topplots4 = () => {
 
 
     return (
-        <section className='h-fit'>
-            {/* Road Label */}
-            <div className="absolute md:left-[24.5%] md:top-[68%] top-[35%] left-[9%]  rotate-270 font-bold ">
-                <p className='md:text-[16px] text-[12px]'>9.00 M WIDE ROAD</p>
-            </div>
-
+        <section className='h-fit relative'>
             <div className="flex md:pr-10 pr-10">
                 <div>
                     {column1.map((num) => {

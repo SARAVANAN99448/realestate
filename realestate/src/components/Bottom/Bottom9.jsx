@@ -6,7 +6,7 @@ const getColors4 = (n) => {
     if (n >= 95 && n <= 100) return "bg-[#7152bf]";
     return "bg-[#e3d91f]";
 };
-const soldPlots = [95, 84, 100];
+const soldPlots = [];
 
 // Define dynamic sizes for plots
 const plotSizes = {
@@ -41,7 +41,7 @@ const Bottom9 = () => {
         navigate("/contact", { state: { plotNumber } });
     };
     return (
-        <div className="flex">
+        <div className="flex relative">
             {[firstColumnNumbers4, secondColumnNumbers4].map((col, i) => (
                 <div key={i} className={`mt-1 ${i === 1 ? "mr-10" : ""}`}>
                     {col.map((n, j) => {

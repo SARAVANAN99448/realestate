@@ -29,14 +29,13 @@ const Contact = () => {
     };
 
     return (
-        <section className="w-full max-w-4xl mx-auto p-6 flex justify-center">
+        <section className="w-full max-w-4xl mx-auto p-6 flex justify-center items-center">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center w-full">
                 <h2 className="text-2xl font-bold mb-4 text-green-800">
                     Contact for Plot {selectedPlot}
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
-                        <label className="block text-gray-700 font-medium">Name</label>
                         <input
                             type="text"
                             name="name"
@@ -48,7 +47,7 @@ const Contact = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-gray-700 font-medium">Email</label>
+
                         <input
                             type="email"
                             name="email"
@@ -60,7 +59,6 @@ const Contact = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-gray-700 font-medium">Mobile</label>
                         <input
                             type="tel"
                             name="mobile"
@@ -72,7 +70,6 @@ const Contact = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-gray-700 font-medium">Message</label>
                         <textarea
                             name="message"
                             value={formData.message}

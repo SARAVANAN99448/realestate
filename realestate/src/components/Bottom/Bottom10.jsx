@@ -6,7 +6,7 @@ const getColors3 = (num) => {
     if (num >= 66 && num <= 75) return "bg-[#e3d91f]";
     return "bg-pink-300";
 };
-const soldPlots = [65,50];
+const soldPlots = [];
 const firstColumnNumbers3 = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75];
 const secondColumnNumbers3 = [56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46];
 

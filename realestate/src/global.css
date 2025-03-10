@@ -5,8 +5,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  
+  overflow:"hidden";
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .hero-title {
   font-family: 'IBM Plex Sans', sans-serif;

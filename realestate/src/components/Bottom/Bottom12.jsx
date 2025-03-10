@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Bottom12 = () => {
     const s1 = Array.from({ length: 11 }, (_, i) => i + 5);
     const navigate = useNavigate();
-    const soldPlots = [5,7,9];
+    const soldPlots = [];
     const handlePlotClick = (plotNumber) => {
         if (soldPlots.includes(plotNumber)) return;
         navigate("/contact", { state: { plotNumber } });

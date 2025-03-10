@@ -8,11 +8,11 @@ const Park = () => {
                 <p className='pl-10 pt-15 md:text-2xl text-xl'> PARK</p>
             </div>
             {/* Road  */}
-            <div className=" md:right-[23%] right-[-38%]  md:bottom-[26%] bottom-[42%] absolute font-bold ">
+            <div className=" md:right-[23%] right-[-38%]  md:bottom-[23%] bottom-[23%] absolute font-bold ">
                 <p className='md:text-[16px] text-[12px]'>9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className=" right-[-11%] md:top-[68%] top-[35%]  md:right-[33.5%] rotate-270 absolute font-bold ">
+            <div className=" right-[-11%] md:top-[35%] top-[40%]  md:right-[33.5%] rotate-270 absolute font-bold ">
                 <p className='md:text-[16px] text-[12px]'>9.00 M WIDE ROAD</p>
             </div>
 

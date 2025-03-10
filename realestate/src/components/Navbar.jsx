@@ -11,13 +11,13 @@ function Navbar() {
       <div className="text-white text-2xl">Swarnagiri</div>
 
       {/* Center - Desktop Menu */}
-      <div className="hidden md:flex space-x-6 ">
+      <div className="hidden md:flex space-x-6 text-white">
         <a href="#" className="font-semibold cursor-pointer hover:underline">Home</a>
-        <a href="#" className="font-semibold cursor-pointer hover:underline">Overview</a>
-        <a href="#" className="font-semibold cursor-pointer hover:underline">Amenities</a>
-        <a href="#" className="font-semibold cursor-pointer hover:underline">Plots</a>
-        <a href="#" className="font-semibold cursor-pointer hover:underline">Location</a>
-        <a href="#" className="font-semibold cursor-pointer hover:underline">Contact</a>
+        <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
+        <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>
+        <a href="#plots" className="font-semibold cursor-pointer hover:underline">Plots</a>
+        <a href="#location" className="font-semibold cursor-pointer hover:underline">Location</a>
+        <a href="#contact" className="font-semibold cursor-pointer hover:underline">Contact</a>
       </div>
 
       {/* Right - Social Icons (Hidden on Small Screens) */}

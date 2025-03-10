@@ -3,7 +3,7 @@ import { FaLeaf, FaRoad, FaBuilding, FaWater, FaCheck } from "react-icons/fa";
 
 const Overview = () => {
   return (
-    <section className="max-w-5xl mx-auto p-6 mt-10 overflow-hidden">
+    <section className="max-w-5xl mx-auto p-6 mt-10 overflow-hidden " id="overview">
       <h2 className="text-2xl font-bold text-center text-[#fb9906] mb-2">Overview</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
       <p className="text-center text-gray-700 mb-4">
@@ -11,7 +11,7 @@ const Overview = () => {
         Life here is not just living; it's meaningful and enjoyable.
       </p>
       <p className="text-center text-gray-700 mb-6">
-        Phase I offers apartments in three blocks: Amethyst, Coral, and Emerald, with large rooms, fantastic views, 
+        Phase I offers apartments in three blocks: Amethyst, Coral, and Emerald, with large rooms, fantastic views,
         cross ventilation, wide corridors, and generous balconies—an epitome of happy living.
       </p>
 
@@ -42,10 +42,11 @@ const Overview = () => {
             text: "Ready To Move In",
           },
         ].map((item, index) => (
-          <div key={index} className="flex flex-col sm:flex-row items-center bg-green-100 text-green-900 p-4 rounded-lg">
-            <div className="mb-2 sm:mb-0 sm:mr-4">{item.icon}</div>
-            <p className="text-center sm:text-left">{item.text}</p>
+          <div key={index} className="flex flex-row items-center bg-green-100 text-green-900 p-4 rounded-lg">
+            <div className="mr-4">{item.icon}</div>
+            <p className="text-left text-[13px] md:text-[14px]">{item.text}</p>
           </div>
+
         ))}
       </div>
     </section>

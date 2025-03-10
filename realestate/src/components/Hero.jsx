@@ -2,10 +2,11 @@ import Navbar from "./Navbar";
 import Overview from "./Overview";
 import Amenities from "./Amenities";
 import LocationAdvantages from "./LocationAdvantages";
+import ImageCom from "./ImageCom";
 
 export default function Hero() {
-    const videoUrl =
-        "https://www.youtube.com/embed/IuAib-ZAl2Y?autoplay=1&loop=1&mute=1&playlist=IuAib-ZAl2Y&playsinline=1&modestbranding=1&controls=0&showinfo=0&rel=0&disablekb=1&fs=0";
+    // const videoUrl =
+    //     "https://www.youtube.com/embed/IuAib-ZAl2Y?autoplay=1&loop=1&mute=1&playlist=IuAib-ZAl2Y&playsinline=1&modestbranding=1&controls=0&showinfo=0&rel=0&disablekb=1&fs=0";
 
     return (
         <>
@@ -14,7 +15,7 @@ export default function Hero() {
                 <div className="absolute inset-0 w-full h-full">
                     <iframe
                         className="absolute inset-0 w-full h-full"
-                        src={videoUrl}
+                        src=""
                         title="YouTube video player"
                         frameBorder="0"
                         allow="autoplay"
@@ -45,6 +46,7 @@ export default function Hero() {
             </div>
 
             <Overview />
+             <ImageCom/>
             <Amenities />
             <LocationAdvantages />
         </>

@@ -21,7 +21,7 @@ const row2 = [
     { number: 134, className: "bg-[#9c4e1a] md:w-20 w-10 h-10 md:border-1 border-1 border-black flex justify-center items-center topplots2 cursor-pointer" },
 ];
 
-const soldPlots = [142, 143, 136,147]
+const soldPlots = []
 const Topplots2 = () => {
     const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ const Topplots2 = () => {
     };
 
     return (
-        <section className="md:ml-15 ml-10 md:pt-20 pt-12">
+        <section className="md:ml-15 ml-10 md:pt-18 pt-24 md:mt-0 mt-1">
         <div className="flex">
             {row1.map((box) => (
                 <div

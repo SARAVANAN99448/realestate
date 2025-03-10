@@ -5,7 +5,7 @@ const columns5 = [
     { numbers: [114, 115, 116, 117], last: 118, bg: ["bg-[#9c4e1a]", "bg-[#e3d91f]", "bg-[#e3d91f]", "bg-[#e3d91f]"] },
     { numbers: [106, 105, 104, 103, 102], last: 101, bg: ["bg-[#9c4e1a]", "bg-[#7152bf]", "bg-[#7152bf]", "bg-[#7152bf]", "bg-[#7152bf]"] },
 ];
-const soldPlots = [115, 104, 101];
+const soldPlots = [];
 const Bottom8 = () => {
 
     const navigate = useNavigate();
@@ -15,9 +15,10 @@ const Bottom8 = () => {
         navigate("/contact", { state: { plotNumber } });
     };
     return (
-        <div className="flex">
+        <div className="flex ">
+            
             {columns5.map((col, index) => (
-                <div key={index} className={`mt-1 ${index === 1 ? "mr-10" : ""}`}>
+                <div key={index} className={`mt-1 ${index === 1 ? "pr-10" : ""}`}>
                     {col.numbers.map((num, i) => {
                         const isSold = soldPlots.includes(num);
                         return (

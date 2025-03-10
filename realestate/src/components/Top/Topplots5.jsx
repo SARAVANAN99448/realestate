@@ -21,7 +21,7 @@ const column2 = [
     { num: 190, bg: "bg-[#7152BF]" },
     { num: 189, bg: "bg-[#7152BF]" },
 ];
-const soldPlots = [195, 193]
+const soldPlots = []
 
 const Topplots5 = () => {
     const navigate = useNavigate();
@@ -33,9 +33,7 @@ const Topplots5 = () => {
 
     return (
         <section className='h-fit'>
-            <div className="md:left-[33.3%] md:top-[68%] top-[10%] left-[35%] rotate-270 absolute font-bold">
-                <p className='md:text-[16px] text-[12px]'>9.00 M WIDE ROAD</p>
-            </div>
+           
             <div className="flex md:pr-10 pr-10 ">
                 <div>
                     {column1.map(({ num, bg }) => {

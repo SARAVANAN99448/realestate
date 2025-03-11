@@ -61,7 +61,7 @@ const Amenities = () => {
               setActiveTab(tab);
               setCurrentIndex(0); // Reset index when changing tab
             }}
-            className={`px-4 py-2 border-2 rounded-lg transition-colors text-[13px] md:text-[16px] cursor-pointer ${activeTab === tab
+            className={`px-4 py-2 border-2 rounded-lg transition-colors text-[16px] cursor-pointer ${activeTab === tab
                 ? "bg-green-900 text-white border-green-900"  // Active tab
                 : "border-green-900 text-green-900 bg-transparent hover:bg-green-700 hover:text-white"
               }`}
@@ -76,7 +76,7 @@ const Amenities = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col text-[13px] md:text-[16px] cursor-pointer items-center border border-green-700 p-4 rounded-lg bg-green-50 transition-all hover:-translate-y-2 hover:bg-green-200 shadow-md"
+            className="flex flex-col text-[16px] cursor-pointer items-center border border-green-700 p-4 rounded-lg bg-green-50 transition-all hover:-translate-y-2 hover:bg-green-200 shadow-md"
           >
             {item.icon}
             <p className="text-green-900 cursor-pointer text-center mt-2">{item.name}</p>
@@ -89,7 +89,7 @@ const Amenities = () => {
         {/* Icon */}
         <div className="mb-2">{items[currentIndex]?.icon}</div>
         {/* Name */}
-        <p className="text-green-900 text-center text-[13px]">{items[currentIndex]?.name}</p>
+        <p className="text-green-900 text-center text-[15px]">{items[currentIndex]?.name}</p>
 
         {/* Navigation Buttons */}
         {items.length > 1 && (

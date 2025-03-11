@@ -3,7 +3,7 @@ import { Building, CheckCircle, Users, Trophy, BarChart } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="max-w-6xl mx-auto py-16 px-4  text-[13px] md:text-[15px]">
+    <div className="max-w-6xl mx-auto py-16 px-4  text-[15px]">
       {/* About Heading */}
       <h2 className="md:text-3xl text-2xl font-bold flex items-center">
         <span className="w-2 h-8 bg-green-600 mr-2"></span> About Swarnagiri's
@@ -17,7 +17,7 @@ const About = () => {
       </p>
 
       {/* Tagline */}
-      <p className="mt-2 text-green-600 font-semibold text-[13px] md:text-[15px]">
+      <p className="mt-2 text-green-600 font-semibold text-[15px]">
       Swarnagiri's - For those who will not settle for something cheap.
       </p>
 
@@ -32,7 +32,7 @@ const About = () => {
         ].map((item, index) => (
           <div key={index} className="border border-green-600 p-4 text-center rounded-md ">
             <div className="flex justify-center ">{item.icon}</div>
-            <h3 className="text-2xl font-bold text-green-600  text-[13px] md:text-[14px]">{item.number}</h3>
+            <h3 className="text-2xl font-bold text-green-600  text-[16px] ">{item.number}</h3>
             <p className="text-gray-700">{item.label}</p>
           </div>
         ))}

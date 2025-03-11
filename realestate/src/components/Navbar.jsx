@@ -8,10 +8,10 @@ function Navbar() {
     <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-30 bg-transparent">
 
       {/* Left - Logo/Icon */}
-      <div className="text-white text-2xl">Swarnagiri</div>
+      <div className="text-white md:text-3xl text-2xl">Swarnagiri</div>
 
       {/* Center - Desktop Menu */}
-      <div className="hidden md:flex space-x-6 text-white">
+      <div className="hidden md:flex space-x-6 text-white  md:text-[18px]">
         <a href="#" className="font-semibold cursor-pointer hover:underline">Home</a>
         <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
         <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>

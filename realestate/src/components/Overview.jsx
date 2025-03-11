@@ -7,39 +7,37 @@ const Overview = () => {
       <h2 className="md:text-3xl text-2xl font-extrabold text-center text-[#fb9906] mb-2">Overview</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
       <p className="text-center text-gray-700 mb-4 text-[15px]">
-        Own a home at Navin’s Hillview Avenue—an exclusive community of spacious, elegantly crafted homes on 11 acres.
-        Life here is not just living; it's meaningful and enjoyable.
+        Own a retreat at Swarnagiri—an exclusive plotted development nestled in the foothills of Chandra Drona Range. Life here is not just living; it's a harmonious blend with nature.
       </p>
       <p className="text-center text-gray-700 mb-6 text-[15px]">
-        Phase I offers apartments in three blocks: Amethyst, Coral, and Emerald, with large rooms, fantastic views,
-        cross ventilation, wide corridors, and generous balconies—an epitome of happy living.
+        Swarnagiri offers 229 independent plots of various dimensions, including 9 x 12m, 9 x 15m, and 12 x 18m options, with breathtaking panoramic views—the perfect canvas for your dream mountain home.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
             icon: <FaLeaf size={40} className="text-green-700" />,
-            text: "Green building – energy efficient, water efficient, use of eco-friendly materials",
+            text: "Weekend Getaway & Investment Opportunity — Build your villa or cottage for personal use or rent it out as a homestay for lucrative returns",
           },
           {
             icon: <FaRoad size={40} className="text-green-700" />,
-            text: "15 mins from New Kilambakkam Bus Terminus & 3 mins from Outer Ring Road",
+            text: "Located near Chikkamagaluru city center — Adjacent to CDA Layout with convenient access to urban amenities",
           },
           {
             icon: <FaRoad size={40} className="text-green-700" />,
-            text: "Away from the bustling GST road, but well within reach and excellent connectivity to all parts of the city through GST - ORR",
+            text: "Expansive Natural Beauty — Sprawling across 64,749 sq. meters (696,960 sq. ft.) of pristine greenery in the Western Ghats",
           },
           {
             icon: <FaWater size={40} className="text-green-700" />,
-            text: "Rainwater harvesting, sewage treatment plant, fire-fighting arrangements",
+            text: "World Class Club — Upcoming facility adjacent to the property featuring lavish lifestyle amenities for residents",
           },
           {
             icon: <FaBuilding size={40} className="text-green-700" />,
-            text: "Clubhouse & Upcoming commercial block available - fulfilling your entertainment and daily needs",
+            text: "Legally Approved — Complete DTCP approval with all legal clearances in place",
           },
           {
             icon: <FaCheck size={40} className="text-green-700" />,
-            text: "Ready To Move In",
+            text: "Ready For Development — Build your custom home in one of Karnataka's most picturesque locations",
           },
         ].map((item, index) => (
           <div key={index} className="flex flex-row items-center bg-green-100 text-green-900 p-4 rounded-lg">

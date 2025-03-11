@@ -1,35 +1,45 @@
 import React, { useState } from "react";
 import {
-  FaBook, FaGamepad, FaDumbbell, FaTableTennis, FaBuilding, FaTheaterMasks,
-  FaLeaf, FaSeedling, FaFutbol, FaSwimmingPool, FaShoppingCart, FaCoffee
+  FaHotel, FaBuilding, FaChalkboard, FaUtensils, FaDumbbell, FaSpa,
+  FaLeaf, FaTableTennis, FaChild, FaCar, FaMosque, FaFutbol, FaSwimmer,
+  FaGlassCheers, FaBirthdayCake, FaChair, FaChess, FaGolfBall
 } from "react-icons/fa";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
-import amenitiesImg from "../assets/images/amenities.jpg"
+
 const Amenities = () => {
   const [activeTab, setActiveTab] = useState("Clubhouse Amenities");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const tabs = ["Clubhouse Amenities", "Green Features", "Outdoor Amenities", "Upcoming Commercial Block"];
+  const tabs = ["Indoor Amenities", "Outdoor Amenities", "Recreation & Wellness", "Community Spaces"];
   const amenities = {
-    "Clubhouse Amenities": [
-      { icon: <FaBook size={40} className="text-green-700" />, name: "Reading room" },
-      { icon: <FaBuilding size={40} className="text-green-700" />, name: "Terrace party lawn" },
-      { icon: <FaGamepad size={40} className="text-green-700" />, name: "Games Room" },
-      { icon: <FaTheaterMasks size={40} className="text-green-700" />, name: "Mini Theatre" },
-      { icon: <FaTableTennis size={40} className="text-green-700" />, name: "Table Tennis" },
-      { icon: <FaDumbbell size={40} className="text-green-700" />, name: "Gym" },
-    ],
-    "Green Features": [
-      { icon: <FaLeaf size={40} className="text-green-700" />, name: "Rainwater Harvesting" },
-      { icon: <FaSeedling size={40} className="text-green-700" />, name: "Organic Garden" },
+    "Indoor Amenities": [
+      { icon: <FaHotel size={40} className="text-green-700" />, name: "Luxury Suites" },
+      { icon: <FaBuilding size={40} className="text-green-700" />, name: "Indoor Badminton Court" },
+      { icon: <FaChalkboard size={40} className="text-green-700" />, name: "Conference Hall" },
+      { icon: <FaUtensils size={40} className="text-green-700" />, name: "Food Courts & Lounge Bar" },
+      { icon: <FaDumbbell size={40} className="text-green-700" />, name: "Fully Equipped Gymnasium" },
+      { icon: <FaSpa size={40} className="text-green-700" />, name: "Spa & Beauty Salon" },
     ],
     "Outdoor Amenities": [
-      { icon: <FaFutbol size={40} className="text-green-700" />, name: "Football Ground" },
-      { icon: <FaSwimmingPool size={40} className="text-green-700" />, name: "Swimming Pool" },
+      { icon: <FaSwimmer size={40} className="text-green-700" />, name: "Swimming Pool" },
+      { icon: <FaTableTennis size={40} className="text-green-700" />, name: "Outdoor Tennis Courts" },
+      { icon: <FaMosque size={40} className="text-green-700" />, name: "Yoga & Meditation Zones" },
+      { icon: <FaChild size={40} className="text-green-700" />, name: "Children's Play Area" },
+      { icon: <FaCar size={40} className="text-green-700" />, name: "Ample Car Parking" },
     ],
-    "Upcoming Commercial Block": [
-      { icon: <FaShoppingCart size={40} className="text-green-700" />, name: "Retail Shops" },
-      { icon: <FaCoffee size={40} className="text-green-700" />, name: "Cafeteria" },
+    "Recreation & Wellness": [
+      { icon: <FaFutbol size={40} className="text-green-700" />, name: "Meditation Zones" },
+      { icon: <FaDumbbell size={40} className="text-green-700" />, name: "Fitness Center" },
+      { icon: <FaSwimmer size={40} className="text-green-700" />, name: "Children's Wading Area" },
+      { icon: <FaMosque size={40} className="text-green-700" />, name: "Yoga & Aerobics Studio" },
+      { icon: <FaChess size={40} className="text-green-700" />, name: "Table Tennis, Carrom & Chess" },
+    ],
+    "Community Spaces": [
+      { icon: <FaBirthdayCake size={40} className="text-green-700" />, name: "Events & Celebrations" },
+      { icon: <FaGlassCheers size={40} className="text-green-700" />, name: "Cultural Gatherings" },
+      { icon: <FaChair size={40} className="text-green-700" />, name: "BBQ & Picnic Areas" },
+      { icon: <FaChild size={40} className="text-green-700" />, name: "Children's Playground" },
+      { icon: <FaLeaf size={40} className="text-green-700" />, name: "Relaxation Corners" },
     ],
   };
 
@@ -45,10 +55,7 @@ const Amenities = () => {
   };
 
   return (
-    <section
-      id="amenities"
-      className="max-w-5xl mx-auto p-6  relative"
-    >
+    <section id="amenities" className="max-w-5xl mx-auto p-6 relative">
       <h2 className="md:text-3xl text-2xl font-extrabold text-center text-[#fb9906] mb-2">Amenities</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
 
@@ -61,10 +68,11 @@ const Amenities = () => {
               setActiveTab(tab);
               setCurrentIndex(0); // Reset index when changing tab
             }}
-            className={`px-4 py-2 border-2 rounded-lg transition-colors text-[16px] cursor-pointer ${activeTab === tab
-                ? "bg-green-900 text-white border-green-900"  // Active tab
+            className={`px-4 py-2 border-2 rounded-lg transition-colors text-[16px] cursor-pointer ${
+              activeTab === tab
+                ? "bg-green-900 text-white border-green-900"
                 : "border-green-900 text-green-900 bg-transparent hover:bg-green-700 hover:text-white"
-              }`}
+            }`}
           >
             {tab}
           </button>

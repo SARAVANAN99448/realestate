@@ -49,7 +49,7 @@ const LocationAdvantages = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto p-6 overflow-hidden text-[13px] md:text-[14px]" id="location">
+    <section className="max-w-6xl mx-auto p-6 overflow-hidden text-[16px]" id="location">
       <h2 className="text-2xl md:text-3xl font-extrabold text-center text-[#fb9906] mb-2">
         Location Advantages
       </h2>
@@ -62,7 +62,7 @@ const LocationAdvantages = () => {
             <div key={section} className="transition-all duration-300">
               <button
                 onClick={() => setOpenSection(openSection === section ? null : section)}
-                className=" w-full flex justify-between cursor-pointer items-center bg-green-700 text-white px-4 py-3 rounded-md text-lg md:text-xl transition-all duration-300 hover:bg-green-800  text-[13px] md:text-[16px] "
+                className=" w-full flex justify-between cursor-pointer items-center bg-green-700 text-white px-4 py-3 rounded-md text-lg md:text-xl transition-all duration-300 hover:bg-green-800  text-[16px] md:text-[16px] "
               >
                 <span>{section}</span>
                 {openSection === section ? <FaChevronUp /> : <FaChevronDown />}

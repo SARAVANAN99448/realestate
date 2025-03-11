@@ -71,7 +71,7 @@ const LocationAdvantages = () => {
                 <div className="bg-green-100 border border-green-400 rounded-md p-4 mt-1 text-green-900 transition-all duration-500">
                   <ul className="list-disc pl-5 space-y-1">
                     {items.map((item, index) => (
-                      <li key={index} className=" text-[13px] md:text-[14px]">{item}</li>
+                      <li key={index} className=" text-[13px] md:text-[16px]">{item}</li>
                     ))}
                   </ul>
                 </div>

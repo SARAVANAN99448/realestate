@@ -7,7 +7,7 @@ import {
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 const Amenities = () => {
-  const [activeTab, setActiveTab] = useState("Clubhouse Amenities");
+  const [activeTab, setActiveTab] = useState("Indoor Amenities");
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const tabs = ["Indoor Amenities", "Outdoor Amenities", "Recreation & Wellness", "Community Spaces"];

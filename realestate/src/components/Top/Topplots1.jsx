@@ -39,10 +39,10 @@ const Topplots1 = () => {
 
     return (
         <><Hero />
-            <h1 className="text-2xl md:text-3xl font-bold text-center text-[#fb9906] mb-2 mt-10" id="plots">Plots for booking</h1>
+            <h1 className="text-2xl md:text-3xl font-extrabold text-center text-[#fb9906] mb-2 mt-10" id="plots">Plots for booking</h1>
             <hr className="w-16 border-green-700 mx-auto mb-4" />
             <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5 overflow-x-auto relative">
-                <div className="md:left-[44.5%] left-[59%] md:top-[35%] top-48 rotate-270 absolute font-bold">
+                <div className="md:left-[46%] left-[59%] md:top-[34%] top-48 rotate-270 absolute font-bold">
                     <p className="md:text-[16px] text-[12px]">12.00 M WIDE ROAD</p>
                 </div>
                 <div >

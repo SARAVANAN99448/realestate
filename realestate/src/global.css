@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif;
-  overflow:"hidden";
+  font-family: 'Abel', sans-serif;
+  overflow: "hidden";
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -14,7 +16,8 @@ html {
 
 .hero-title {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 700; /* Extra Bold */
+  font-weight: 700;
+  /* Extra Bold */
 }
 
 .clip-path {
@@ -28,6 +31,7 @@ html {
 .park {
   clip-path: polygon(-10000% 0%, 0% 0%, 100% 100%, 100% 100%);
 }
+
 .park2 {
   clip-path: polygon(100% 0%, 0% 0%, 100% 100%, 100% 100%);
 }
@@ -39,6 +43,7 @@ html {
 .topplots2 {
   clip-path: polygon(-10000% 0%, 70% 0%, 100% 100%, 100% 100%);
 }
+
 .for226 {
   clip-path: polygon(0% 0%, 100% 30%, 100% 100%, -10000% 90%);
 }
@@ -46,10 +51,12 @@ html {
 .for225 {
   clip-path: polygon(0% 100%, 110% -80%, 100% 100%, 100% 100%);
 }
-.for224{
+
+.for224 {
   clip-path: polygon(0% 100%, 110% -1010%, 100% 100%, 0% 100%);
 }
-.for223{
+
+.for223 {
   clip-path: polygon(0% 100%, 110% -1010%, 100% 100%, 0% 100%);
 }
 

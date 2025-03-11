@@ -47,9 +47,9 @@ const Amenities = () => {
   return (
     <section
       id="amenities"
-      className="max-w-5xl mx-auto p-6 text-[13px] md:text-[14px] relative"
+      className="max-w-5xl mx-auto p-6  relative"
     >
-      <h2 className="text-2xl font-bold text-center text-[#fb9906] mb-2">Amenities</h2>
+      <h2 className="md:text-3xl text-2xl font-extrabold text-center text-[#fb9906] mb-2">Amenities</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
 
       {/* Tabs */}
@@ -61,7 +61,7 @@ const Amenities = () => {
               setActiveTab(tab);
               setCurrentIndex(0); // Reset index when changing tab
             }}
-            className={`px-4 py-2 border-2 rounded-lg transition-colors cursor-pointer ${activeTab === tab
+            className={`px-4 py-2 border-2 rounded-lg transition-colors text-[13px] md:text-[16px] cursor-pointer ${activeTab === tab
                 ? "bg-green-900 text-white border-green-900"  // Active tab
                 : "border-green-900 text-green-900 bg-transparent hover:bg-green-700 hover:text-white"
               }`}
@@ -76,7 +76,7 @@ const Amenities = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col cursor-pointer items-center border border-green-700 p-4 rounded-lg bg-green-50 transition-all hover:-translate-y-2 hover:bg-green-200 shadow-md"
+            className="flex flex-col text-[13px] md:text-[16px] cursor-pointer items-center border border-green-700 p-4 rounded-lg bg-green-50 transition-all hover:-translate-y-2 hover:bg-green-200 shadow-md"
           >
             {item.icon}
             <p className="text-green-900 cursor-pointer text-center mt-2">{item.name}</p>

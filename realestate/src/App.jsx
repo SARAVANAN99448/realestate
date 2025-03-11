@@ -54,7 +54,7 @@ const App = () => {
                     {/* park */}
                     <div className="">
                         <div className='park2 md:w-52 w-36 h-32 bg-green-500 mt-1 flex items-center mr-10 '>
-                            <p className='md:pl-32 md:pb-10  md:text-2xl text-xl pl-18 pb-10'>PARK</p>
+                            <p className='md:pl-32 md:pb-10  md:text-2xl text-xl pl-18 pb-10 font-stretch-semi-expanded'>PARK</p>
                         </div>
                     </div>
                     <Bottom8 />

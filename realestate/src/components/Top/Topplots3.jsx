@@ -33,11 +33,11 @@ const Topplots3 = () => {
     return (
         <section className='md:pr-10 md:pl-32 pl-60 pr-10 h-fit relative'>
             {/* Road Label */}
-            <div className="absolute min-w-full md:left-[42%] md:top-[40%] top-20 left-[44%] rotate-270 font-bold ">
+            <div className="absolute min-w-full md:left-[42%] md:top-[34%] top-20 left-[44%] rotate-270 font-bold ">
                 <p className='md:text-[16px] text-[12px] w-full'>9.00 M WIDE ROAD</p>
             </div>
             {/* Road Label */}
-            <div className="absolute min-w-full md:left-[91%] md:top-[40%] top-20 left-[73%] rotate-270 font-bold ">
+            <div className="absolute min-w-full md:left-[91%] md:top-[34%] top-20 left-[73%] rotate-270 font-bold ">
                 <p className='md:text-[16px] text-[12px] w-full'>9.00 M WIDE ROAD</p>
             </div>
             <div className="flex ">

@@ -18,7 +18,7 @@ const ContactSection = () => {
         </div>
 
         {/* Right Side - Contact Form */}
-        <div className="bg-white shadow-lg rounded-lg p-6">
+        <div className="bg-white shadow-lg rounded-lg p-6 text-[13px] md:text-[16px]">
           <h2 className="text-2xl font-bold mb-4 text-green-800">Contact Us</h2>
           <form className="space-y-4">
             <div>

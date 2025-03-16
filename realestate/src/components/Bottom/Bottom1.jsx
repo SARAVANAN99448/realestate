@@ -28,39 +28,39 @@ const Bottom1 = () => {
                 <p className="md:text-[16px] text-[12px] w-full">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="   rotate-270 min-w-full absolute md:top-[0%] top-14 md:left-[91%] left-[102%]  z-30 font-bold">
+            <div className="   rotate-270 min-w-full absolute md:top-[0%] top-14 md:left-[91%] left-[102%]   font-bold">
                 <p className="md:text-[16px] w-full text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="   rotate-270 absolute min-w-full md:top-[0%] top-14 md:left-[135%] left-[167%] z-30 md:ml-2 font-bold">
+            <div className="   rotate-270 absolute min-w-full md:top-[0%] top-14 md:left-[135%] left-[167%]  md:ml-2 font-bold">
                 <p className="md:text-[16px] text-[12px] w-full">12.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="rotate-270 min-w-full absolute md:top-[0%] top-14 md:left-[183%] left-[232%] z-30  md:ml-2  font-bold">
+            <div className="rotate-270 min-w-full absolute md:top-[0%] top-14 md:left-[183%] left-[232%]   md:ml-2  font-bold">
                 <p className="md:text-[16px] text-[12px] w-full">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className=" min-w-full  rotate-270 absolute z-30 md:top-[0%] top-14 md:left-[233%] left-[297%] font-bold">
+            <div className=" min-w-full  rotate-270 absolute  md:top-[0%] top-14 md:left-[233%] left-[297%] font-bold">
                 <p className="md:text-[16px] w-full text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className=" min-w-full  rotate-270 absolute z-30 md:top-[0%] top-14 md:left-[281%] left-[362%] font-bold">
+            <div className=" min-w-full  rotate-270 absolute  md:top-[0%] top-14 md:left-[281%] left-[362%] font-bold">
                 <p className="md:text-[16px] w-full text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="rotate-270 absolute min-w-full md:top-[250%] top-[270%] md:left-[133%]  left-[164%] z-30 md:ml-2 font-bold">
+            <div className="rotate-270 absolute min-w-full md:top-[250%] top-[270%] md:left-[133%]  left-[164%]  md:ml-2 font-bold">
                 <p className="md:text-[16px] text-[12px] w-full">12.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="  z-30 rotate-270 min-w-full absolute md:top-[250%] top-[270%] md:left-[187%] left-[234%] font-bold">
+            <div className="  rotate-270 min-w-full absolute md:top-[250%] top-[270%] md:left-[187%] left-[234%] font-bold">
                 <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="  z-30 rotate-270 min-w-full absolute md:top-[250%] top-[270%] md:left-[235%] left-[300%] font-bold">
+            <div className=" rotate-270 min-w-full absolute md:top-[250%] top-[270%] md:left-[235%] left-[300%] font-bold">
                 <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="  z-30 rotate-270 min-w-full absolute md:top-[250%] top-[270%] md:left-[283%] left-[364%] font-bold">
+            <div className="  rotate-270 min-w-full absolute md:top-[250%] top-[270%] md:left-[283%] left-[364%] font-bold">
                 <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
             </div>
             {/* First Column */}

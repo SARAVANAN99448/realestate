@@ -29,7 +29,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="w-full max-w-4xl mx-auto p-6 flex justify-center items-center">
+        <section className="w-full h-screen flex justify-center items-center">
             <div className="bg-white shadow-lg rounded-lg p-6 text-center w-full">
                 <h2 className="text-2xl font-bold mb-4 text-green-800">
                     Contact for Plot {selectedPlot}
@@ -82,21 +82,22 @@ const Contact = () => {
                     </div>
 
                     {/* Buttons */}
-                    <div className="flex flex-col sm:flex-row justify-center sm:justify-between gap-4 mt-4">
-                        <button
-                            type="submit"
-                            className="bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition w-full sm:w-auto"
-                        >
-                            Submit
-                        </button>
+                    <div className="flex flex-wrap justify-center gap-96 mt-2">
                         <button
                             type="button"
                             onClick={() => navigate(-1)}
-                            className="text-red-500 py-2 px-4 rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition w-full sm:w-auto"
+                            className="text-red-500 cursor-pointer py-2 px-4 rounded-md border border-red-500 hover:bg-red-500 hover:text-white transition w-full sm:w-auto"
                         >
                             Back
                         </button>
+                        <button
+                            type="submit"
+                            className="bg-green-600 cursor-pointer text-white py-2 px-4 rounded-md hover:bg-green-700 transition w-full sm:w-auto"
+                        >
+                            Submit
+                        </button>
                     </div>
+
                 </form>
             </div>
         </section>

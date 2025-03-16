@@ -1,58 +1,98 @@
-import { useState } from "react";
-import { Menu, X, Facebook, Twitter, Instagram } from "lucide-react"; // Import icons
-
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, Facebook, Twitter, Instagram } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import swarnagiri from "../assets/images/Swarnagiri.png"
+import leela from "../assets/images/LeelaaVentures.png"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const observerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsScrolled(!entry.isIntersecting),
+      { rootMargin: "-50px 0px 0px 0px" }
+    );
+
+    if (observerRef.current) {
+      observer.observe(observerRef.current);
+    }
+
+    return () => {
+      if (observerRef.current) {
+        observer.unobserve(observerRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <nav className="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-30 bg-transparent">
+    <>
+      {/* Invisible element to track scrolling */}
+      <div ref={observerRef} className="absolute top-10 w-full h-[60px]" />
 
-      {/* Left - Logo/Icon */}
-      <div className="text-white md:text-3xl text-2xl">Swarnagiri</div>
-
-      {/* Center - Desktop Menu */}
-      <div className="hidden md:flex space-x-6 text-white  md:text-[18px]">
-        <a href="#" className="font-semibold cursor-pointer hover:underline">Home</a>
-        <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
-        <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>
-        <a href="#plots" className="font-semibold cursor-pointer hover:underline">Plots</a>
-        <a href="#location" className="font-semibold cursor-pointer hover:underline">Location</a>
-        <a href="#contact" className="font-semibold cursor-pointer hover:underline">Contact</a>
-      </div>
-
-      {/* Right - Social Icons (Hidden on Small Screens) */}
-      <div className="hidden md:flex space-x-4">
-        <a href="#" className="text-white hover:text-gray-300 cursor-pointer"><Facebook /></a>
-        <a href="#" className="text-white hover:text-gray-300 cursor-pointer"><Twitter /></a>
-        <a href="#" className="text-white hover:text-gray-300 cursor-pointer"><Instagram /></a>
-      </div>
-
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden text-white text-2xl"
-        onClick={() => setIsOpen(!isOpen)}
+      {/* Navbar */}
+      <nav
+        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 transition-all duration-300 ${isScrolled ? "bg-white shadow-lg text-black" : "bg-transparent text-white"
+          }`}
       >
-        {isOpen ? <X /> : <Menu />}
-      </button>
-
-      {/* Mobile Menu (Dropdown) */}
-      {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-full max-w-xs bg-black bg-opacity-80 text-white rounded-lg flex flex-col items-center py-4 space-y-4">
-          <a href="#" className="font-semibold hover:underline cursor-pointer">Home</a>
-          <a href="#" className="font-semibold hover:underline cursor-pointer">Overview</a>
-          <a href="#" className="font-semibold hover:underline cursor-pointer">Amenities</a>
-          <a href="#" className="font-semibold hover:underline cursor-pointer">Plots</a>
-          <a href="#" className="font-semibold hover:underline cursor-pointer">Location</a>
-          <a href="#" className="font-semibold hover:underline cursor-pointer">Contact</a>
-          {/* Social Icons in Mobile Menu */}
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className="text-white hover:text-gray-300 cursor-pointer"><Facebook /></a>
-            <a href="#" className="text-white hover:text-gray-300 cursor-pointer"><Twitter /></a>
-            <a href="#" className="text-white hover:text-gray-300 cursor-pointer"><Instagram /></a>
-          </div>
+        <div className="">
+          <img src={swarnagiri} alt="" className="w-[200px] h-[100px] object-contain" />
         </div>
-      )}
-    </nav>
+
+        {/* Center - Desktop Menu */}
+        <div className="hidden md:flex space-x-6 text-lg items-center">
+          <a href="#home" className="font-semibold cursor-pointer hover:underline">Home</a>
+          <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
+          <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>
+          <a href="#plots" className="font-semibold cursor-pointer hover:underline">Plots</a>
+          <a href="#location" className="font-semibold cursor-pointer hover:underline">Location</a>
+          <a href="#contact" className="font-semibold cursor-pointer hover:underline">Contact</a>
+          <button
+            onClick={() => navigate("/admin-login")}
+            className="ml-4 px-4 py-2 cursor-pointer bg-green-600 text-white rounded-md hover:bg-green-700 transition"
+          >
+            Admin Login
+          </button>
+        </div>
+
+        {/* Right */}
+        <div className="">
+          <img src={leela} alt="" className="w-[200px] h-[100px] object-contain" />
+        </div>
+
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <X /> : <Menu />}
+        </button>
+
+        {/* Mobile Menu (Dropdown) */}
+        {isOpen && (
+          <div className="absolute top-16 left-0 w-full bg-black bg-opacity-90 text-white flex flex-col items-center py-4 space-y-4">
+            <a href="#home" className="font-semibold hover:underline cursor-pointer">Home</a>
+            <a href="#overview" className="font-semibold hover:underline cursor-pointer">Overview</a>
+            <a href="#amenities" className="font-semibold hover:underline cursor-pointer">Amenities</a>
+            <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
+            <a href="#location" className="font-semibold hover:underline cursor-pointer">Location</a>
+            <a href="#contact" className="font-semibold hover:underline cursor-pointer">Contact</a>
+            <button
+              onClick={() => navigate("/admin-login")}
+              className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
+            >
+              Admin Login
+            </button>
+            {/* Right */}
+            <div className="">
+              <img src={leela} alt="" className="w-[200px] h-[130px] object-contain" />
+            </div>
+          </div>
+        )}
+      </nav>
+    </>
   );
 }
 

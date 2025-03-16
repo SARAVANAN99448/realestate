@@ -1,6 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import { db } from "./Firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        ...formData,
+        timestamp: new Date(),
+      });
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" }); // Reset form
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Failed to send message. Try again!");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="w-full max-w-5xl mx-auto p-6 overflow-hidden" id="contact">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -20,11 +48,14 @@ const ContactSection = () => {
         {/* Right Side - Contact Form */}
         <div className="bg-white shadow-lg rounded-lg p-6 text-[16px]">
           <h2 className="text-2xl font-bold mb-4 text-green-800">Contact Us</h2>
-          <form className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-gray-700 font-medium">Name</label>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                 placeholder="Enter your name"
                 required
@@ -35,6 +66,9 @@ const ContactSection = () => {
               <label className="block text-gray-700 font-medium">Email</label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                 placeholder="Enter your email"
                 required
@@ -44,6 +78,9 @@ const ContactSection = () => {
             <div>
               <label className="block text-gray-700 font-medium">Message</label>
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                 rows="4"
                 placeholder="Your message"
@@ -53,9 +90,10 @@ const ContactSection = () => {
 
             <button
               type="submit"
-              className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition"
+              className="w-full bg-green-600 text-white py-2 rounded-md hover:bg-green-700 transition disabled:opacity-50"
+              disabled={loading}
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>

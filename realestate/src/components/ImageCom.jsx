@@ -13,7 +13,7 @@ const Configurations = () => {
       ></div>
 
       {/* Overlay Content */}
-      <div className="text-center text-white relative z-10">
+      <div className="text-center text-white relative">
         <h2 className="md:text-3xl text-2xl font-bold text-black">Configurations</h2>
         <hr className="w-12 mx-auto my-2 border-white" />
         <div className="text-[16px] border-4 cursor-pointer border-white rounded-xl px-6 py-4 bg-black/50 text-white text-center w-80 mt-4 transition-all duration-300 hover:bg-green-700/70 hover:-translate-y-2">

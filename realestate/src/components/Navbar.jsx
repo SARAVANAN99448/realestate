@@ -6,7 +6,6 @@ import leela from "../assets/images/LeelaaVentures.png"
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const navigate = useNavigate();
   const observerRef = useRef(null);
 
   useEffect(() => {
@@ -37,7 +36,7 @@ function Navbar() {
           }`}
       >
         <div className="">
-          <img src={swarnagiri} alt="" className="w-[200px] h-[100px] object-contain" />
+          <img src={swarnagiri} alt="" className="w-[200px] h-[100px] object-contain"  />
         </div>
 
         {/* Center - Desktop Menu */}
@@ -48,12 +47,6 @@ function Navbar() {
           <a href="#plots" className="font-semibold cursor-pointer hover:underline">Plots</a>
           <a href="#location" className="font-semibold cursor-pointer hover:underline">Location</a>
           <a href="#contact" className="font-semibold cursor-pointer hover:underline">Contact</a>
-          <button
-            onClick={() => navigate("/admin-login")}
-            className="ml-4 px-4 py-2 cursor-pointer bg-green-600 text-white rounded-md hover:bg-green-700 transition"
-          >
-            Admin Login
-          </button>
         </div>
 
         {/* Right */}
@@ -79,12 +72,6 @@ function Navbar() {
             <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
             <a href="#location" className="font-semibold hover:underline cursor-pointer">Location</a>
             <a href="#contact" className="font-semibold hover:underline cursor-pointer">Contact</a>
-            <button
-              onClick={() => navigate("/admin-login")}
-              className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition"
-            >
-              Admin Login
-            </button>
             {/* Right */}
             <div className="">
               <img src={leela} alt="" className="w-[200px] h-[130px] object-contain" />

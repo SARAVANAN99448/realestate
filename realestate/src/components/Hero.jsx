@@ -2,7 +2,10 @@ import Navbar from "./Navbar";
 import Overview from "./Overview";
 import Amenities from "./Amenities";
 import LocationAdvantages from "./LocationAdvantages";
-import ImageCom from "./ImageCom";
+import Chikkamagaluru from "./Chikkamagaluru";
+import ExperienceLife from "./ExperienceLife";
+import InvestSwarnagiri from "./InvestSwarnagiri";
+import TechnicalSpecifications from "./TechnicalSpecifications";
 
 export default function Hero() {
     const videoUrl =
@@ -46,8 +49,11 @@ export default function Hero() {
             </div>
 
             <Overview />
-            <ImageCom />
+            <Chikkamagaluru/>
+            <ExperienceLife/>
+            <InvestSwarnagiri/>
             <Amenities />
+            <TechnicalSpecifications/>
             <LocationAdvantages />
         </>
     );

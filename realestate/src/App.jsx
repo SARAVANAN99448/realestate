@@ -19,6 +19,8 @@ import ContactSection from "./components/ContactSection";
 import Disclaimer from "./components/Disclaimer";
 import EnquireNow from "./components/Enquire";
 import DownloadButton from "./components/Download";
+import RentalIncomeSteps from "./components/RentalIncomeSteps";
+import AboutLeelaVentures from "./components/AboutLeelaVentures";
 
 const App = () => {
     return (<>
@@ -67,7 +69,9 @@ const App = () => {
         </section>
         <EnquireNow />
         <DownloadButton />
+        <RentalIncomeSteps/>
         <About />
+        <AboutLeelaVentures/>
         <ContactSection />
         <Disclaimer />
     </>

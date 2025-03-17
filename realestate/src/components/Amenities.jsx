@@ -55,7 +55,7 @@ const Amenities = () => {
   };
 
   return (
-    <section id="amenities" className="max-w-5xl mx-auto p-6 relative">
+    <section id="amenities" className="max-w-5xl mx-auto p-6 relative md:mt-20 mt-10">
       <h2 className="md:text-3xl text-2xl font-extrabold text-center text-[#fb9906] mb-2">Amenities</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
 

@@ -50,7 +50,7 @@ const LocationAdvantages = () => {
   };
 
   return (
-    <section className="max-w-6xl mx-auto p-6 overflow-hidden text-[16px] md:mt-20 mt-10" id="location">
+    <section className="max-w-6xl mx-auto p-6 overflow-hidden text-[17px] md:mt-20 mt-10" id="location">
       <h2 className="text-2xl md:text-3xl font-extrabold text-center text-[#fb9906] mb-2">
         Location Advantages
       </h2>
@@ -63,7 +63,7 @@ const LocationAdvantages = () => {
             <div key={section} className="transition-all duration-300">
               <button
                 onClick={() => setOpenSection(openSection === section ? null : section)}
-                className=" w-full flex justify-between cursor-pointer items-center bg-green-700 text-white px-4 py-3 rounded-md text-lg md:text-xl transition-all duration-300 hover:bg-green-800  text-[16px] md:text-[16px] "
+                className=" w-full flex justify-between cursor-pointer items-center bg-green-700 text-white px-4 py-3 rounded-md text-lg md:text-xl transition-all duration-300 hover:bg-green-800  text-[17px] md:text-[17px] "
               >
                 <span>{section}</span>
                 {openSection === section ? <FaChevronUp /> : <FaChevronDown />}
@@ -72,7 +72,7 @@ const LocationAdvantages = () => {
                 <div className="bg-green-100 border border-green-400 rounded-md p-4 mt-1 text-green-900 transition-all duration-500">
                   <ul className="list-disc pl-5 space-y-1">
                     {items.map((item, index) => (
-                      <li key={index} className="text-[16px]">{item}</li>
+                      <li key={index} className="text-[17px]">{item}</li>
                     ))}
                   </ul>
                 </div>

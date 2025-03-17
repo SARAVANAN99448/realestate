@@ -18,7 +18,7 @@ export default function Hero() {
                 <div className="absolute inset-0 w-full h-full">
                     <iframe
                         className="w-full h-full absolute inset-0 object-cover"
-                        src="{videoUrl}"
+                        src={videoUrl}
                         title="YouTube video player"
                         frameBorder="0"
                         allow="autoplay"

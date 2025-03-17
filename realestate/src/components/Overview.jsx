@@ -42,7 +42,7 @@ const Overview = () => {
         ].map((item, index) => (
           <div key={index} className="flex flex-row items-center bg-green-100 text-green-900 p-4 rounded-lg">
             <div className="mr-4">{item.icon}</div>
-            <p className="text-left text-[16px]">{item.text}</p>
+            <p className="text-left text-[17px]">{item.text}</p>
           </div>
 
         ))}

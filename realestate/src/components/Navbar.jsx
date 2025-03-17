@@ -45,8 +45,8 @@ function Navbar() {
           <a href="#home" className="font-semibold cursor-pointer hover:underline">Home</a>
           <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
           <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>
-          <a href="#plots" className="font-semibold cursor-pointer hover:underline">Plots</a>
           <a href="#location" className="font-semibold cursor-pointer hover:underline">Location</a>
+          <a href="#plots" className="font-semibold cursor-pointer hover:underline">Plots</a>
           <a href="#contact" className="font-semibold cursor-pointer hover:underline">Contact</a>
         </div>
 
@@ -74,8 +74,8 @@ function Navbar() {
               <a href="#home" className="font-semibold hover:underline cursor-pointer">Home</a>
               <a href="#overview" className="font-semibold hover:underline cursor-pointer">Overview</a>
               <a href="#amenities" className="font-semibold hover:underline cursor-pointer">Amenities</a>
-              <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
               <a href="#location" className="font-semibold hover:underline cursor-pointer">Location</a>
+              <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
               <a href="#contact" className="font-semibold hover:underline cursor-pointer">Contact</a>
             </div>
           </div>

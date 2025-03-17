@@ -15,7 +15,7 @@ const Chikkamagaluru = () => {
       
       {/* Right Side - Text */}
       <div className="md:w-1/2 w-full md:pl-8 mt-4 md:mt-0 text-center md:text-left">
-        <h2 className=" md:text-2xl text-xl font-bold text-green-800"> Fresh air forever</h2>
+        <h2 className=" md:text-2xl text-xl font-bold text-green-800">Chikkamagaluru : Fresh air forever</h2>
         <p className="mt-4 text-green-700 text-[16px]">
           A coffee connoisseur's muse, a photographer's paradise, the land that
           introduced coffee to India and home to the tallest peak in Karnataka

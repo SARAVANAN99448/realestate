@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Facebook, Twitter, Instagram } from "lucide-react";
-import { useNavigate } from "react-router-dom";
-import swarnagiri from "../assets/images/Swarnagiri.png"
-import leela from "../assets/images/LeelaaVentures.png"
+import { Menu, X } from "lucide-react";
+import swarnagiri from "../assets/images/Swarnagiri.png";
+import leela from "../assets/images/LeelaaVentures.png";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,11 +32,12 @@ function Navbar() {
 
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 transition-all duration-300 ${isScrolled ? "bg-white shadow-lg text-black" : "bg-transparent text-white"
-          }`}
+        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 transition-all duration-300 ${
+          isScrolled ? "bg-white shadow-lg text-black" : "bg-transparent text-white"
+        }`}
       >
-        <div className="">
-          <img src={swarnagiri} alt="" className="w-[200px] h-[100px] object-contain"  />
+        <div>
+          <img src={swarnagiri} alt="" className="w-[200px] h-[100px] object-contain" />
         </div>
 
         {/* Center - Desktop Menu */}
@@ -49,32 +50,33 @@ function Navbar() {
           <a href="#contact" className="font-semibold cursor-pointer hover:underline">Contact</a>
         </div>
 
-        {/* Right */}
-        <div className="">
+        <div>
           <img src={leela} alt="" className="w-[200px] h-[100px] object-contain" />
         </div>
 
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X /> : <Menu />}
+        {/* Mobile Menu Button (Only visible on mobile) */}
+        <button className="md:hidden text-2xl cursor-pointer" onClick={() => setIsOpen(true)}>
+          <Menu />
         </button>
 
-        {/* Mobile Menu (Dropdown) */}
+        {/* Mobile Menu (Dropdown with Limited Width & Height) */}
         {isOpen && (
-          <div className="absolute top-16 left-0 w-full bg-black bg-opacity-90 text-white flex flex-col items-center py-4 space-y-4">
-            <a href="#home" className="font-semibold hover:underline cursor-pointer">Home</a>
-            <a href="#overview" className="font-semibold hover:underline cursor-pointer">Overview</a>
-            <a href="#amenities" className="font-semibold hover:underline cursor-pointer">Amenities</a>
-            <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
-            <a href="#location" className="font-semibold hover:underline cursor-pointer">Location</a>
-            <a href="#contact" className="font-semibold hover:underline cursor-pointer">Contact</a>
-            {/* Right */}
-            <div className="">
-              <img src={leela} alt="" className="w-[200px] h-[130px] object-contain" />
+          <div className="absolute top-16 right-4 bg-green-900 bg-opacity-95 text-white w-64 rounded-lg shadow-lg p-4">
+            {/* Close Button Inside the Menu */}
+            <button
+              className="absolute top-2 right-2 text-white text-xl cursor-pointer"
+              onClick={() => setIsOpen(false)}
+            >
+              <X />
+            </button>
+
+            <div className="flex flex-col items-center space-y-4 mt-6">
+              <a href="#home" className="font-semibold hover:underline cursor-pointer">Home</a>
+              <a href="#overview" className="font-semibold hover:underline cursor-pointer">Overview</a>
+              <a href="#amenities" className="font-semibold hover:underline cursor-pointer">Amenities</a>
+              <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
+              <a href="#location" className="font-semibold hover:underline cursor-pointer">Location</a>
+              <a href="#contact" className="font-semibold hover:underline cursor-pointer">Contact</a>
             </div>
           </div>
         )}

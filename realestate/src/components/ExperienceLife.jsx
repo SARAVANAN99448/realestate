@@ -3,7 +3,10 @@ import plotsImg from "../assets/images/plots.jpg";
 
 const ExperienceLife = () => {
     return (<>
-        <div className="md:hidden  flex flex-col items-center bg-green-100 py-10 p-6 rounded-lg shadow-lg max-w-5xl mx-auto mt-10 lg:mt-20">
+        <div>
+            <h2 className="md:text-2xl text-xl font-bold text-[#fb9906] text-center mt-10 lg:mt-20">Experience life in the foothills of nature</h2>
+        </div>
+        <div className="md:hidden  flex flex-col items-center bg-white  py-10 p-6 rounded-lg shadow-lg max-w-5xl mx-auto ">
             {/* Image on top */}
             <div className="w-full flex justify-center">
                 <img
@@ -15,9 +18,6 @@ const ExperienceLife = () => {
 
             {/* Text below */}
             <div className="w-full text-center mt-4">
-                <h2 className="text-xl lg:text-2xl font-bold text-green-800">
-                    Experience life in the foothills of nature
-                </h2>
                 <p className="mt-4 text-green-700 text-[16px]">
                     Nestled in the Chandra Drona Range of the Western Ghats, Swarnagiri
                     offers a breathtaking panoramic view of pristine nature. Located near
@@ -33,10 +33,11 @@ const ExperienceLife = () => {
             </div>
         </div>
         {/*  */}
-        <div className="hidden md:mt-20 mt-10 md:flex py-10 flex-col md:flex-row items-center bg-green-100 p-6 rounded-lg shadow-lg max-w-5xl mx-auto">
+
+        <div className="hidden md:flex py-10 flex-col bg-white  md:flex-row items-center  p-6 rounded-lg shadow-lg max-w-5xl mx-auto">
             {/* Left Side - Text */}
             <div className="md:w-1/2 w-full md:pr-8 mt-4 md:mt-0 text-center md:text-left">
-                <h2 className="text-3xl font-bold text-green-800">Experience life in the foothills of nature</h2>
+
                 <p className="mt-4 text-green-700">
                     Nestled in the Chandra Drona Range of the Western Ghats, Swarnagiri offers a breathtaking panoramic view of pristine nature. Located near Chikkamagaluru city center, this DTCP-approved residential layout spans 64,749 sq. mts. of lush greenery.
                 </p>

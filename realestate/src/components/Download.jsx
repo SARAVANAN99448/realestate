@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import download from "../assets/images/download.pdf"
 const DownloadButton = () => {
   const [isSticky, setIsSticky] = useState(false);
 
@@ -18,10 +18,10 @@ const DownloadButton = () => {
   }, []);
 
   const handleDownload = () => {
-    const pdfUrl = "/sample.pdf"; // Replace with actual PDF URL
+    const pdfUrl = download; // Replace with actual PDF URL
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "document.pdf";
+    link.download = "download.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

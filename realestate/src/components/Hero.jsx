@@ -14,18 +14,19 @@ export default function Hero() {
     return (
         <>
             <div id="hero-section" className="relative w-full h-screen overflow-hidden">
-                {/* Background Video using YouTube iframe */}
-                <div className="absolute inset-0 w-full h-full">
-                    <iframe
-                        className="w-full h-full absolute inset-0 object-cover"
-                        src={videoUrl}
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="autoplay"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                    ></iframe>
+                {/* Responsive Background Video */}
+                <div className="absolute inset-0 w-full h-full overflow-hidden">
+                    <video
+                        className="w-full h-full object-cover"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    >
+                        <source src="/video.mp4" type="video/mp4" />
+                    </video>
                 </div>
+
 
                 {/* Overlay for better readability */}
                 <div className="absolute inset-0 bg-black opacity-50"></div>

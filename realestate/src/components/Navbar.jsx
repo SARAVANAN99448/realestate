@@ -37,11 +37,11 @@ function Navbar() {
         }`}
       >
         <div>
-          <img src={swarnagiri} alt="" className="w-[200px] h-[100px] object-contain" />
+          <img src={swarnagiri} alt="" className="w-[350px] h-[150px] object-contain" />
         </div>
 
         {/* Center - Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-lg items-center">
+        <div className="hidden md:flex space-x-6 text-lg items-center ">
           <a href="#home" className="font-semibold cursor-pointer hover:underline">Home</a>
           <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
           <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>

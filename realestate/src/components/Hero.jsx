@@ -38,22 +38,20 @@ export default function Hero() {
                 {/* Hero Text */}
                 <div className="absolute inset-0 flex flex-col items-start justify-center text-white px-6 md:px-36">
                     <h1 className="text-3xl md:text-5xl font-bold hero-title">
-                        India’s #1 Hill Station <br />
-                        <span className="block mt-2 md:mt-4">Real Estate Platform</span>
+                        Legacy in the Hills <br />
                     </h1>
-
                     <p className="mt-4 text-sm md:text-lg">
-                        Handpicked properties, detailed insights, unmatched investment <br /> opportunities – everything at your fingertips.
+                        Premium plots nestled in Chikkamagaluru's foothills <br /> with world-class amenities and investment potential.
                     </p>
                 </div>
             </div>
 
             <Overview />
-            <Chikkamagaluru/>
-            <ExperienceLife/>
-            <InvestSwarnagiri/>
+            <Chikkamagaluru />
+            <ExperienceLife />
+            <InvestSwarnagiri />
             <Amenities />
-            <TechnicalSpecifications/>
+            <TechnicalSpecifications />
             <LocationAdvantages />
         </>
     );

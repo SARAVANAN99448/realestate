@@ -33,8 +33,10 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="bg-green-100 py-12 text-center">
-      <h2 className="text-3xl font-bold text-[#fb9906] mb-8">MEET OUR TEAM</h2>
+    <section className="bg-white max-w-6xl mx-auto py-16 px-4 text-center ">
+      <h2 className="md:text-3xl text-2xl font-bold flex items-center mb-8">
+        <span className="w-2 h-8 bg-green-600 mr-2"></span> Meet Our Team
+      </h2>
       <div className="flex flex-wrap justify-center gap-8">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center max-w-xs">

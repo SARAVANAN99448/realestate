@@ -1,5 +1,5 @@
 import React from "react";
-import powerImg from "../assets/images/powergrid.jpg" 
+import powerImg from "../assets/images/technical.png"
 const TechnicalSpecifications = () => {
   return (
     <div className="flex flex-col md:flex-row md:mt-20 mt-10 items-center bg-green-100 p-6 rounded-lg shadow-lg max-w-5xl mx-auto">

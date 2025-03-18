@@ -6,11 +6,8 @@ import Chikkamagaluru from "./Chikkamagaluru";
 import ExperienceLife from "./ExperienceLife";
 import InvestSwarnagiri from "./InvestSwarnagiri";
 import TechnicalSpecifications from "./TechnicalSpecifications";
-
+import vedio  from "../assets/images/Swarnagiri.mp4"
 export default function Hero() {
-    const videoUrl =
-        "https://www.youtube.com/embed/IuAib-ZAl2Y?autoplay=1&loop=1&mute=1&playlist=IuAib-ZAl2Y&playsinline=1&modestbranding=1&controls=0&showinfo=0&rel=0&disablekb=1&fs=0";
-
     return (
         <>
             <div id="hero-section" className="relative w-full h-screen overflow-hidden">
@@ -23,7 +20,7 @@ export default function Hero() {
                         muted
                         playsInline
                     >
-                        <source src="/video.mp4" type="video/mp4" />
+                        <source src={vedio} type="video/mp4" />
                     </video>
                 </div>
 
@@ -37,8 +34,8 @@ export default function Hero() {
                 </div>
 
                 {/* Hero Text */}
-                <div className="absolute inset-0 flex flex-col items-start justify-center text-white px-6 md:px-36">
-                    <h1 className="text-3xl md:text-5xl font-bold hero-title">
+                <div className="absolute inset-0 flex flex-col items-start justify-center text-white px-6 md:px-28">
+                    <h1 className="text-3xl md:text-5xl font-bold hero-title ">
                         Legacy in the Hills <br />
                     </h1>
                     <p className="mt-4 text-sm md:text-lg">

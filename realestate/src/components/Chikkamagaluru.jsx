@@ -1,9 +1,9 @@
 import React from "react";
-import image from "../assets/images/amenities.jpg"; // Ensure this path is correct
+import image from "../assets/images/Chikkamagaluru.png"; 
 
 const Chikkamagaluru = () => {
   return (
-    <div className="relative w-full min-h-screen flex items-center justify-center mb-10">
+    <div className="relative w-full min-h-screen flex items-center justify-center mb-10 md:mt-20 mt-10">
       {/* Parallax Background Image */}
       <div
         className="absolute top-0 left-0 w-full h-full z-[-1] bg-fixed bg-cover bg-center"

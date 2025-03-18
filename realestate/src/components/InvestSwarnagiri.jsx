@@ -1,5 +1,5 @@
 import React from "react";
-import investImg from "../assets/images/invest.jpeg"
+import investImg from "../assets/images/why.jpg"
 const InvestSwarnagiri = () => {
   return (
     <div className="flex flex-col md:flex-row items-center bg-green-100 p-6 py-10 rounded-lg shadow-lg max-w-5xl mx-auto md:mt-20 mt-10">

@@ -1,5 +1,5 @@
 import React from "react";
-import plotsImg from "../assets/images/plots.jpg";
+import plotsImg from "../assets/images/nature.png";
 
 const ExperienceLife = () => {
     return (<>

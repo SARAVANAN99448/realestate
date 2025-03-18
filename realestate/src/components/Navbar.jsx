@@ -32,7 +32,7 @@ function Navbar() {
 
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center py-4 px-4 transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full h-[80px] z-50 flex justify-between items-center  px-4 transition-all duration-300 ${
           isScrolled ? "bg-white shadow-lg text-black" : "bg-transparent text-white"
         }`}
       >

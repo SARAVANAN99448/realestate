@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-
+import { db } from '../Firebase'; // Ensure Firebase is correctly imported
+import { collection, getDocs } from 'firebase/firestore';
 
 const plotsColumn1 = [
     { number: 226, bgColor: "bg-[#9c4e1a]", height: "h-20", extraClass: "for226" },
@@ -20,34 +20,51 @@ const plotsColumn2 = [
     { number: 219, bgColor: "bg-[#e3d91f]", height: "h-10", extraClass: "" },
 ];
 
-const soldPlots = [];
 const Topplots3 = () => {
     const navigate = useNavigate();
+    const [soldPlots, setSoldPlots] = useState([]);
 
-    
+    // Fetch sold plots from Firebase
+    useEffect(() => {
+        const fetchSoldPlots = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, "soldPlots"));
+                const soldPlotNumbers = querySnapshot.docs.map((doc) => doc.data().plotNumber);
+                setSoldPlots(soldPlotNumbers);
+            } catch (error) {
+                console.error("Error fetching sold plots:", error);
+            }
+        };
+
+        fetchSoldPlots();
+    }, []);
+
     const handlePlotClick = (plotNumber) => {
         if (soldPlots.includes(plotNumber)) return;
         navigate("/contact", { state: { plotNumber } });
     };
 
     return (
-        <section className='md:pr-10 md:pl-32 pl-60 pr-10 h-fit relative'>
-            {/* Road Label */}
-            <div className="absolute min-w-full md:left-[42%] md:top-[34%] top-20 left-[44%] rotate-270 font-bold ">
+        <section className='md:pr-7 md:pl-32 pl-60 pr-5 h-fit relative'>
+            {/* Road Labels */}
+            <div className="absolute min-w-full md:left-[45%] md:top-[34%] top-[20%] left-[47%] rotate-270 font-bold">
                 <p className='md:text-[16px] text-[12px] w-full'>9.00 M WIDE ROAD</p>
             </div>
-            {/* Road Label */}
-            <div className="absolute min-w-full md:left-[91%] md:top-[34%] top-20 left-[73%] rotate-270 font-bold ">
+            <div className="absolute min-w-full md:left-[94%] md:top-[34%] top-[20%] left-[73%] rotate-270 font-bold">
                 <p className='md:text-[16px] text-[12px] w-full'>9.00 M WIDE ROAD</p>
             </div>
-            <div className="flex ">
+
+            {/* Plot Layout */}
+            <div className="flex">
+                {/* Column 1 */}
                 <div className="md:mt-28 mt-28 pt-2">
                     {plotsColumn1.map((plot) => {
                         const isSold = soldPlots.includes(plot.number);
                         return (
-                            <div key={plot.number}
+                            <div
+                                key={plot.number}
                                 className={`${isSold ? 'bg-red-500' : plot.bgColor} 
-                                    md:w-10 w-7 ${plot.height} md:md:border-1 border-1 border-black 
+                                    md:w-12 w-8 ${plot.height} md:border-1 border-1 border-black 
                                     flex justify-center items-center 
                                     ${isSold ? 'cursor-default' : 'cursor-pointer'} 
                                     ${plot.extraClass}`}
@@ -61,13 +78,15 @@ const Topplots3 = () => {
                     })}
                 </div>
 
+                {/* Column 2 */}
                 <div>
                     {plotsColumn2.map((plot) => {
                         const isSold = soldPlots.includes(plot.number);
                         return (
-                            <div key={plot.number}
+                            <div
+                                key={plot.number}
                                 className={`${isSold ? 'bg-red-500' : plot.bgColor} 
-                                    md:w-10 w-7 ${plot.height} md:border-1 border-1 border-black 
+                                    md:w-12 w-8 ${plot.height} md:border-1 border-1 border-black 
                                     flex justify-center items-center 
                                     ${isSold ? 'cursor-default' : 'cursor-pointer'} 
                                     ${plot.extraClass}`}

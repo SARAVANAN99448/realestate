@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { db } from "../Firebase"; // Import Firebase config
+import { collection, getDocs } from "firebase/firestore";
 
 const column1 = [
     { num: 195, bg: "bg-[#9c4e1a]" },
@@ -21,10 +22,25 @@ const column2 = [
     { num: 190, bg: "bg-[#7152BF]" },
     { num: 189, bg: "bg-[#7152BF]" },
 ];
-const soldPlots = []
 
 const Topplots5 = () => {
     const navigate = useNavigate();
+    const [soldPlots, setSoldPlots] = useState([]);
+
+    // Fetch sold plots from Firebase
+    useEffect(() => {
+        const fetchSoldPlots = async () => {
+            try {
+                const querySnapshot = await getDocs(collection(db, "soldPlots"));
+                const soldPlotNumbers = querySnapshot.docs.map((doc) => doc.data().plotNumber);
+                setSoldPlots(soldPlotNumbers);
+            } catch (error) {
+                console.error("Error fetching sold plots:", error);
+            }
+        };
+
+        fetchSoldPlots();
+    }, []);
 
     const handlePlotClick = (plotNumber) => {
         if (soldPlots.includes(plotNumber)) return;
@@ -32,22 +48,21 @@ const Topplots5 = () => {
     };
 
     return (
-        <section className='h-fit'>
-           
-            <div className="flex md:pr-10 pr-10 ">
+        <section className="h-fit">
+            <div className="flex md:pr-5 pr-5">
                 <div>
                     {column1.map(({ num, bg }) => {
                         const isSold = soldPlots.includes(num);
                         return (
                             <div
                                 key={num}
-                                className={`${isSold ? 'bg-red-500' : bg} 
-                                    md:w-10 w-7 h-10 md:border-1 border-1 border-black 
+                                className={`${isSold ? "bg-red-500" : bg} 
+                                    md:w-12 w-8 h-10 border border-black 
                                     flex justify-center items-center 
-                                    ${isSold ? 'cursor-default' : 'cursor-pointer'}`}
+                                    ${isSold ? "cursor-default" : "cursor-pointer"}`}
                                 onClick={!isSold ? () => handlePlotClick(num) : undefined}
                             >
-                                <p className={`${isSold ? 'text-white' : 'text-pink-500'} md:text-sm text-[10px]`}>
+                                <p className={`${isSold ? "text-white" : "text-pink-500"} md:text-sm text-[10px]`}>
                                     {num}
                                 </p>
                             </div>
@@ -61,13 +76,13 @@ const Topplots5 = () => {
                         return (
                             <div
                                 key={num}
-                                className={`${isSold ? 'bg-red-500' : bg} 
-                                    md:w-13 w-9 h-[16.6%] md:border-1 border-1 border-black 
+                                className={`${isSold ? "bg-red-500" : bg} 
+                                    md:w-13 w-9 h-[16.6%] border border-black 
                                     flex justify-center items-center 
-                                    ${isSold ? 'cursor-default' : 'cursor-pointer'}`}
+                                    ${isSold ? "cursor-default" : "cursor-pointer"}`}
                                 onClick={!isSold ? () => handlePlotClick(num) : undefined}
                             >
-                                <p className={`${isSold ? 'text-white' : 'text-pink-500'} md:text-sm text-[10px]`}>
+                                <p className={`${isSold ? "text-white" : "text-pink-500"} md:text-sm text-[10px]`}>
                                     {num}
                                 </p>
                             </div>

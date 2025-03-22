@@ -32,9 +32,8 @@ function Navbar() {
 
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full h-[80px] z-50 flex justify-between items-center  px-4 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-lg text-black" : "bg-transparent text-white"
-        }`}
+        className={`fixed top-0 left-0 w-full h-[80px] z-50 flex justify-between items-center pt-1  px-4 transition-all duration-300 ${isScrolled ? "bg-white shadow-lg text-black" : "bg-transparent text-white"
+          }`}
       >
         <div>
           <img src={swarnagiri} alt="" className="md:w-[250px] md:h-[150px] w-[100px] h-[100px] object-contain" />
@@ -61,9 +60,8 @@ function Navbar() {
 
         {/* Mobile Menu (Top-Aligned, Compact & Blurred Background) */}
         <div
-          className={`fixed inset-0  bg-opacity-50 backdrop-blur-md z-50 flex justify-end transition-transform transform ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          } md:hidden`}
+          className={`fixed inset-0  bg-opacity-50 backdrop-blur-md z-50 flex justify-end transition-transform transform ${isOpen ? "translate-x-0" : "translate-x-full"
+            } md:hidden`}
           onClick={() => setIsOpen(false)} // Close on outside click
         >
           <div
@@ -80,13 +78,14 @@ function Navbar() {
 
             {/* Menu Links */}
             <div className="flex flex-col items-start space-y-6 mt-12">
-              <a href="#home" className="font-semibold hover:underline cursor-pointer">Home</a>
-              <a href="#overview" className="font-semibold hover:underline cursor-pointer">Overview</a>
-              <a href="#amenities" className="font-semibold hover:underline cursor-pointer">Amenities</a>
-              <a href="#location" className="font-semibold hover:underline cursor-pointer">Location</a>
-              <a href="#plots" className="font-semibold hover:underline cursor-pointer">Plots</a>
-              <a href="#contact" className="font-semibold hover:underline cursor-pointer">Contact</a>
+              <a href="#home" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Home</a>
+              <a href="#overview" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Overview</a>
+              <a href="#amenities" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Amenities</a>
+              <a href="#location" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Location</a>
+              <a href="#plots" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Plots</a>
+              <a href="#contact" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Contact</a>
             </div>
+
           </div>
         </div>
       </nav>

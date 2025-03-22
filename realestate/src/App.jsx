@@ -21,6 +21,9 @@ import EnquireNow from "./components/Enquire";
 import DownloadButton from "./components/Download";
 import RentalIncomeSteps from "./components/RentalIncomeSteps";
 import AboutLeelaVentures from "./components/AboutLeelaVentures";
+import GalleryCarousel from "./components/GalleryCarousel";
+import Parkbottom from "./components/Parkbottom";
+import BottomContact from "./components/BottomContact";
 
 const App = () => {
     return (<>
@@ -30,7 +33,7 @@ const App = () => {
             <section className="overflow-x-auto ">
                 {/* Main road */}
                 <Mainroad />
-                <div className="flex justify-center md:ml-0 ml-68 md:pl-0 pl-7 relative ">
+                <div className="flex justify-center md:ml-0 ml-40 md:pl-0 pl-7 relative ">
                     <Bottom1 />
                     <Bottom2 />
                     <Bottom3 />
@@ -40,9 +43,9 @@ const App = () => {
                     <Bottom7 />
                 </div>
                 {/* center road */}
-                <div className="relative my-10 text-center mx-auto w-full max-w-5xl">
+                <div className="relative my-2 text-center mx-auto w-full max-w-5xl">
                     {/* Road Background */}
-                    <div className="relative w-full h-16 bg-black rounded-md flex items-center justify-center">
+                    <div className="relative w-full h-10 bg-black rounded-md flex items-center justify-center">
                         {/* Center White Dashed Line */}
                         <div className="absolute top-1/2 left-0 w-full border-t-[5px] border-dashed border-white transform -translate-y-1/2"></div>
 
@@ -52,11 +55,11 @@ const App = () => {
                         </p>
                     </div>
                 </div>
-                <div className=" mt-10  flex justify-center md:pl-28 md:ml-1  pl-72 ml-16 ">
+                <div className="   flex justify-center md:pl-28 md:ml-1  pl-48 ml-12 ">
                     {/* park */}
                     <div className="">
-                        <div className='park2 md:w-52 w-36 h-32 bg-green-500 mt-1 flex items-center mr-10 '>
-                            <p className='md:pl-32 md:pb-10  md:text-2xl text-xl pl-18 pb-10 font-stretch-semi-expanded'>PARK</p>
+                        <div className='park2 md:w-52 w-32 h-32 bg-green-500 mt-1 flex items-center mr-6 '>
+                            <p className='md:pl-28 md:pb-10  md:text-xl font-bold text-xl pl-18 pb-10 font-stretch-semi-expanded'>PARK</p>
                         </div>
                     </div>
                     <Bottom8 />
@@ -65,15 +68,20 @@ const App = () => {
                     <Bottom11 />
                     <Bottom12 />
                 </div>
+                <div>
+                    <Parkbottom/>
+                </div>
             </section>
         </section>
         <EnquireNow />
         <DownloadButton />
         <RentalIncomeSteps/>
+        <GalleryCarousel/>
         <About />
         <AboutLeelaVentures/>
         <ContactSection />
-        <Disclaimer />
+        <BottomContact/>
+        
     </>
     );
 };

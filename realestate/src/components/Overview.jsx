@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLeaf, FaRoad, FaBuilding, FaWater, FaCheck } from "react-icons/fa";
+import { FaLeaf, FaRoad, FaBuilding, FaWater, FaFileSignature   } from "react-icons/fa";
 
 const Overview = () => {
   return (
@@ -36,8 +36,8 @@ const Overview = () => {
             text: "Legally Approved — Complete DTCP approval with all legal clearances in place",
           },
           {
-            icon: <FaCheck size={40} className="text-green-700" />,
-            text: "Ready For Development — Build your custom home in one of Karnataka's most picturesque locations",
+            icon: <FaFileSignature  size={40} className="text-green-700" />,
+            text: "Ready For Registration — Build your custom home in one of Karnataka's most picturesque locations",
           },
         ].map((item, index) => (
           <div key={index} className="flex flex-row items-center bg-green-100 text-green-900 p-4 rounded-lg">

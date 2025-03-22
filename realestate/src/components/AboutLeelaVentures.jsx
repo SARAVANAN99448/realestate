@@ -3,8 +3,15 @@ import image1 from "../assets/images/image1.jpeg"; // Use cropped PNG images
 import image2 from "../assets/images/image2.jpeg";
 import image3 from "../assets/images/image3.jpeg";
 import image4 from "../assets/images/image4.jpeg";
+import image5 from "../assets/images/image5.jpeg";
 
 const teamMembers = [
+  {
+    name: "Keshava Murthy",
+    role: "Founder",
+    company: "Leelaa Ventures",
+    image: image5,
+  },
   {
     name: "Leelaa Keshava Murthy",
     role: "Promoter",
@@ -18,17 +25,18 @@ const teamMembers = [
     image: image2,
   },
   {
-    name: "Ashok Aditya",
-    role: "Civil Contractor",
-    company: "Infonity Associates",
-    image: image3,
-  },
-  {
     name: "Pruthvi Gowda",
     role: "Sales and Hospitality",
     company: "Leelaa Ventures",
     image: image4,
   },
+  {
+    name: "Ashok Aditya",
+    role: "Civil Contractor",
+    company: "Infonity Associates",
+    image: image3,
+  }
+  
 ];
 
 const Team = () => {

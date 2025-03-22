@@ -78,3 +78,22 @@ html {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
+
+/* Change pagination dot color */
+.swiper-pagination-bullet {
+  background-color: #fb9906 !important; /* Change dot color */
+  width: 12px; /* Increase size */
+  height: 12px;
+}
+
+/* Change active dot color */
+.swiper-pagination-bullet-active {
+  background-color: white !important; /* Change active dot color */
+}
+
+/* Change navigation arrow color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important; /* Change arrow color */
+  font-size: 30px; /* Increase size */
+}

@@ -27,6 +27,7 @@ const LocationAdvantages = () => {
       "Manikydhara Falls – 34 km perfect for day trips",
       "Kemmanagundi – 62 km mountain resort",
       "Kudremukh – 85 km national park beauty",
+      "Hirekolale lake"
     ],
     "Religious Towns": [
       "Belur – Historic temple town 25 km away",

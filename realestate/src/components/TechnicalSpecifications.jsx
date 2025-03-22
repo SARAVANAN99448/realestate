@@ -11,22 +11,23 @@ const TechnicalSpecifications = () => {
           className="w-full h-auto max-w-md rounded-lg object-cover"
         />
       </div>
-      
+
       {/* Right Side - Text */}
       <div className="md:w-1/2 w-full md:pl-8 mt-4 md:mt-0 text-center md:text-left">
         <h2 className="md:text-2xl text-xl  font-bold text-green-800">Technical Specifications - First time in Chikkamagaluru</h2>
-        <ul className="list-disc list-inside mt-4 text-green-700 text-[17px]">
-          <li>Underground Power Supply through Separate Concrete Duct with LT/HT Cables</li>
-          <li>Aesthetically Designed Street Lighting with LED Lights</li>
-          <li>Uninterrupted Water Supply through UPVC Pipes and Fittings with Storage Capacity of about 2,00,000 Lakh Liters</li>
-          <li>Sanitary and Sewage Lines fitted with Non-Corrosive PE Chambers/Manholes and Foam Core Pipes</li>
-          <li>Sewage Treatment Plant – Treated Water for all Green Bodies</li>
-          <li>Closed Concrete Storm Water Drains with Pavers and Kerb Stones</li>
-          <li>Paved Footpaths and Tree Lined Avenues</li>
-          <li>Provision for Piped Gas Supply</li>
-          <li>Rain Water Harvesting</li>
-          <li>Solar Lighting for Common Areas</li>
+        <ul className="list-disc list-outside pl-6 mt-4 text-green-700 text-[17px] space-y-2">
+          <li className="leading-relaxed">Underground Power Supply through Separate Concrete Duct with LT/HT Cables</li>
+          <li className="leading-relaxed">Aesthetically Designed Street Lighting with LED Lights</li>
+          <li className="leading-relaxed">Unlimited Water Supply through UPVC Pipes and Fittings with Storage Capacity of about 1,00,000 Lakh Liters and Sump & Overhead Watertank</li>
+          <li className="leading-relaxed">Sanitary and Sewage Lines fitted with Non-Corrosive PE Chambers/Manholes and Foam Core Pipes</li>
+          <li className="leading-relaxed">Sewage Treatment Plant – Treated Water for all Green Bodies</li>
+          <li className="leading-relaxed">Closed Concrete Storm Water Drains with Pavers and Kerb Stones</li>
+          <li className="leading-relaxed">Paved Footpaths and Tree Lined Avenues</li>
+          <li className="leading-relaxed">Provision for Piped Gas Supply</li>
+          <li className="leading-relaxed">Rain Water Harvesting</li>
+          <li className="leading-relaxed">Solar Lighting for Common Areas</li>
         </ul>
+
       </div>
     </div>
   );

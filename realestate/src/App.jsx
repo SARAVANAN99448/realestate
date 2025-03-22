@@ -16,7 +16,6 @@ import Bottom11 from "./components/Bottom/Bottom11";
 import Bottom12 from "./components/Bottom/Bottom12";
 import About from "./components/About";
 import ContactSection from "./components/ContactSection";
-import Disclaimer from "./components/Disclaimer";
 import EnquireNow from "./components/Enquire";
 import DownloadButton from "./components/Download";
 import RentalIncomeSteps from "./components/RentalIncomeSteps";

@@ -11,7 +11,7 @@ import Hero from "../Hero";
 import ClubHouse from "../Clubhouse";
 
 const plots = [
-    { id: 158, color: "bg-[#9c4e1a]", column: 1, extraClass: "topplot1", height: "md:h-32 h-[20%]" },
+    { id: 158, color: "bg-[#9c4e1a]", column: 1, extraClass: "topplot1", height: "md:h-[25.5%] h-[27%]" },
     { id: 159, color: "bg-[#7152BF]", column: 1, height: "md:h-15 h-13" },
     { id: 160, color: "bg-[#7152BF]", column: 1, height: "md:h-15 h-13" },
     { id: 161, color: "bg-[#7152BF]", column: 1, height: "md:h-15 h-13" },
@@ -20,7 +20,7 @@ const plots = [
     { id: 164, color: "bg-[#7152BF]", column: 1, height: "md:h-15 h-13" },
     { id: 165, color: "bg-[#7152BF]", column: 1, height: "md:h-15 h-13" },
     { id: 166, color: "bg-[#9c4e1a]", column: 1, height: "md:h-15 h-13" },
-    { id: 157, color: "bg-[#9c4e1a]", column: 2, height: "md:h-24 h-[17.7%]", mt: "md:mt-11 mt-8", extraClass: "topplot1" },
+    { id: 157, color: "bg-[#9c4e1a]", column: 2, height: "md:h-[19.9%] h-[22.8%]", mt: "md:mt-[120%] mt-11", extraClass: "topplot1" },
     { id: 156, color: "bg-[#e3d91f]", column: 2, height: "md:h-13 h-11" },
     { id: 155, color: "bg-[#e3d91f]", column: 2, height: "md:h-13 h-11" },
     { id: 154, color: "bg-[#e3d91f]", column: 2, height: "md:h-13 h-11" },
@@ -64,8 +64,8 @@ const Topplots1 = () => {
                 Scroll right to view all the plots
             </h1>
             <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5 overflow-x-auto relative">
-                <div className="md:left-[48%] left-[60%] md:top-[62%] top-[64%] rotate-270 absolute font-bold">
-                    <p className="md:text-[16px] text-[12px]">12.00 M WIDE ROAD</p>
+                <div className="md:left-[50%] left-[65%] md:top-[67%] top-[68.8%] rotate-270 absolute font-bold">
+                    <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
                 </div>
                 <div>
                     <ClubHouse/>
@@ -77,7 +77,7 @@ const Topplots1 = () => {
                     <Topplots6 />
                 </div>
 
-                <div className="flex md:ml-5 md:mt-36 mt-36 md:pt-3  pt-4">
+                <div className="flex md:ml-5 md:mt-36 mt-36 md:pt-3.5  pt-4">
                     {[1, 2].map((col) => (
                         <div key={col}>
                             {plots

@@ -5,7 +5,7 @@ const Parkbottom = () => {
     <div className="relative flex justify-end md:pr-64 pr-5 h-fit md:mt-7 mt-5 bg-white">
       {/* Text Label for Road */}
       <div className="md:left-[60%] left-[75%] md:top-[-12%] -top-4.5 absolute font-bold">
-        <p className="md:text-[16px] text-[12px]">12.00 M WIDE ROAD</p>
+        <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
       </div>
 
       {/* Desktop Version - Hidden on Mobile */}

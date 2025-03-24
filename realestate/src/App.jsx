@@ -23,6 +23,7 @@ import AboutLeelaVentures from "./components/AboutLeelaVentures";
 import GalleryCarousel from "./components/GalleryCarousel";
 import Parkbottom from "./components/Parkbottom";
 import BottomContact from "./components/BottomContact";
+import Legend from "./components/Legend";
 
 const App = () => {
     return (<>
@@ -44,13 +45,13 @@ const App = () => {
                 {/* center road */}
                 <div className="relative my-2 text-center mx-auto w-full max-w-5xl">
                     {/* Road Background */}
-                    <div className="relative w-full h-10 bg-black rounded-md flex items-center justify-center">
+                    <div className="relative md:w-full w-[550px] h-10 bg-black rounded-md flex items-center justify-center">
                         {/* Center White Dashed Line */}
                         <div className="absolute top-1/2 left-0 w-full border-t-[5px] border-dashed border-white transform -translate-y-1/2"></div>
 
                         {/* MAIN ROAD Text */}
                         <p className="relative text-white font-extrabold text-[16px] md:text-xl tracking-wide bg-black px-4">
-                        9.00 M WIDE ROAD
+                        WIDE ROAD
                         </p>
                     </div>
                 </div>
@@ -74,6 +75,7 @@ const App = () => {
         </section>
         <EnquireNow />
         <DownloadButton />
+        <Legend/>
         <RentalIncomeSteps/>
         <GalleryCarousel/>
         <About />

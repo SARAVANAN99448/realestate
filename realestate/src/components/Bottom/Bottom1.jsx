@@ -4,8 +4,8 @@ import { db } from "../Firebase"; // Import Firebase
 import { collection, onSnapshot } from "firebase/firestore"; // Firestore functions
 
 const firstColumn = [
-    { number: 132, className: "bg-[#9c4e1a] md:w-28 w-10 md:h-24 h-14 md:border-1 border-1 border-black relative flex justify-center items-center next-path cursor-pointer" },
-    { number: 131, className: "bg-[#9c4e1a] md:w-15 w-10 md:h-24 h-14 md:border-1 border-1 border-black relative flex justify-center items-center cursor-pointer" },
+    { number: 132, className: "bg-[#9c4e1a] md:w-28 w-10 md:h-24 h-20 md:border-1 border-1 border-black relative flex justify-center items-center next-path cursor-pointer" },
+    { number: 131, className: "bg-[#9c4e1a] md:w-15 w-10 md:h-24 h-20 md:border-1 border-1 border-black relative flex justify-center items-center cursor-pointer" },
 ];
 
 const secondColumn = [
@@ -40,44 +40,44 @@ const Bottom1 = () => {
     return (
         <div className="flex relative">
              {/* Road  */}
-             <div className="   rotate-270 absolute min-w-full md:top-[0%] top-14 md:left-[44.5%] left-14 font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">9.00 M WIDE ROAD</p>
+             <div className="   rotate-270 absolute min-w-full md:top-[-10%] top-10 md:left-[44.5%] left-14 font-bold">
+                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="   rotate-270 min-w-full absolute md:top-[0%] top-14 md:left-[89.5%] left-[102%]   font-bold">
-                <p className="md:text-[16px] w-full text-[12px]">9.00 M WIDE ROAD</p>
+            <div className="   rotate-270 min-w-full absolute md:top-[-10%] top-10 md:left-[89.5%] left-[102%]   font-bold">
+                <p className="md:text-[16px] w-full text-[12px]">WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="   rotate-270 absolute min-w-full md:top-[0%] top-14 md:left-[131%] left-[162%]  md:ml-2 font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">12.00 M WIDE ROAD</p>
+            <div className="   rotate-270 absolute min-w-full md:top-[-10%] top-10 md:left-[131%] left-[162%]  md:ml-2 font-bold">
+                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className="rotate-270 min-w-full absolute md:top-[0%] top-14 md:left-[177%] left-[221%]   md:ml-2  font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">9.00 M WIDE ROAD</p>
+            <div className="rotate-270 min-w-full absolute md:top-[-10%] top-10 md:left-[177%] left-[221%]   md:ml-2  font-bold">
+                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className=" min-w-full  rotate-270 absolute  md:top-[0%] top-14 md:left-[225%] left-[281%] font-bold">
-                <p className="md:text-[16px] w-full text-[12px]">9.00 M WIDE ROAD</p>
+            <div className=" min-w-full  rotate-270 absolute  md:top-[-10%] top-10 md:left-[225%] left-[281%] font-bold">
+                <p className="md:text-[16px] w-full text-[12px]">WIDE ROAD</p>
             </div>
             {/* Road  */}
-            <div className=" min-w-full  rotate-270 absolute  md:top-[0%] top-14 md:left-[271%] left-[340%] font-bold">
-                <p className="md:text-[16px] w-full text-[12px]">9.00 M WIDE ROAD</p>
+            <div className=" min-w-full  rotate-270 absolute  md:top-[-10%] top-10 md:left-[270%] left-[340%] font-bold">
+                <p className="md:text-[16px] w-full text-[12px]">WIDE ROAD</p>
             </div>
             {/* Road  */}
             <div className="rotate-270 absolute min-w-full md:top-[200%] top-[240%] md:left-[129.5%]  left-[163%]  md:ml-2 font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">12.00 M WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
             </div>
             {/* Road  */}
             <div className="  rotate-270 min-w-full absolute md:top-[200%] top-[240%] md:left-[182%] left-[221%] font-bold">
-                <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
             </div>
             {/* Road  */}
             <div className=" rotate-270 min-w-full absolute md:top-[200%] top-[240%] md:left-[227%] left-[280%] font-bold">
-                <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
             </div>
             {/* Road  */}
             <div className="  rotate-270 min-w-full absolute md:top-[200%] top-[240%] md:left-[272%] left-[340%] font-bold">
-                <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
             </div>
 
             {/* ✅ First Column */}
@@ -102,7 +102,7 @@ const Bottom1 = () => {
                 </div>
                 <div
                     className={`${soldPlots.includes(133) ? 'bg-red-500' : 'bg-[#9c4e1a]'} 
-                    md:w-full w-20 h-16 md:border-1 border-1 border-black relative 
+                    md:w-full w-20 md:h-16 h-20  md:border-1 border-1 border-black relative 
                     flex justify-center items-center next-path 
                     ${soldPlots.includes(133) ? 'cursor-default' : 'cursor-pointer'}`}
                     onClick={!soldPlots.includes(133) ? () => handlePlotClick(133) : undefined}

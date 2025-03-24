@@ -57,8 +57,8 @@ const Topplots6 = () => {
 
     return (
         <section className="md:pl-32 pl-60 md:pt-10 pt-7 relative mt-0">
-            <div className="md:right-[25%] md:bottom-[77%] bottom-[78%] right-[20%] absolute font-bold">
-                <p className="md:text-[16px] text-[12px]">9.00 M WIDE ROAD</p>
+            <div className="md:right-[32%] md:bottom-[77%] bottom-[78%] right-[20%] absolute font-bold">
+                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
             </div>
 
             <div>

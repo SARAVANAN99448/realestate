@@ -53,6 +53,9 @@ const Topplots3 = () => {
             <div className="absolute min-w-full md:left-[94%] md:top-[34%] top-[20%] left-[73%] rotate-270 font-bold">
                 <p className='md:text-[16px] text-[12px] w-full'>WIDE ROAD</p>
             </div>
+            <div className="absolute min-w-full md:left-[129%] md:top-[-8%] top-[-8%] left-[115%] font-bold">
+                <p className='md:text-[16px] text-[12px] w-full'>WIDE ROAD</p>
+            </div>
             
 
             {/* Plot Layout */}

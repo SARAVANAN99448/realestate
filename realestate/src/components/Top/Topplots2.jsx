@@ -44,7 +44,7 @@ const Topplots2 = () => {
     };
 
     return (
-        <section className="md:ml-7 ml-5 md:pt-10 pt-7 md:mt-0 mt-1">
+        <section className="md:ml-7 ml-5 md:pt-7 pt-7 md:mt-0 mt-1 relative">
             <div className="flex">
                 {row1.map((box) => (
                     <div
@@ -77,6 +77,11 @@ const Topplots2 = () => {
                     </div>
                 ))}
             </div>
+            {/* Line */}
+
+            <div className="absolute w-64 h-0 border-t-4 border-black border-dashed md:rotate-[57deg] rotate-[61deg] md:right-[-28%] right-[-49%] top-[10%] md:top-[20%]"></div>
+            <h1 className='absolute rotate-[60deg] md:top-[0%] top-[-115%] md:left-[50%] left-[30%] font-bold  right-[-28%]'>Main road</h1>
+
         </section>
     );
 };

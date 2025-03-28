@@ -13,7 +13,7 @@ const ClubHouse = () => {
             md:border-b-[150px] border-b-[130px]  border-b-green-500
             flex items-center justify-center"
             style={{
-              clipPath: " polygon(0% 113%, 96% 100%, 80% 0%, 20% 0%)",
+              clipPath: " polygon(0% 114%, 96% 100%, 80% 0%, 20% 0%)",
             }}
           >
 
@@ -26,9 +26,9 @@ const ClubHouse = () => {
 
           {/* Rectangle (Bottom Part) with a Sharp Left Side and STRAIGHT Bottom */}
           <div
-            className="md:w-[220px] w-[160px] h-12 bg-green-500 md:mr-3 mr-4"
+            className="md:w-[220px] w-[160px] md:h-12 h-12 bg-green-500 md:mr-3 mr-4 pt-[-3%]"
             style={{
-              clipPath: "polygon(3% 0%, 95% 0%, 1900% 100%, 0% 100%)", // Adjusted to make the bottom straight
+              clipPath: "polygon(3% 0%, 95% -1000%, 1900% 100%, 0% 100%)", // Adjusted to make the bottom straight
             }}
           />
         </div>

@@ -63,12 +63,11 @@ const Topplots1 = () => {
                 Scroll right to view all the plots
             </h1>
             <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5 overflow-x-auto relative">
+
                 <div className="md:left-[49.9%] left-[65%] md:top-[67%] top-[68.8%] rotate-270 absolute font-bold">
                     <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
                 </div>
-                {/* Line */}
 
-                <div className="absolute w-96 h-0 border-t-4 border-black border-dashed md:rotate-[55deg] rotate-[60deg] md:right-[31.5%] right-[-28%] md:top-[14%] top-[13%]"></div>
                 <div>
                     <ClubHouse />
                     <div className="flex">
@@ -79,7 +78,28 @@ const Topplots1 = () => {
                     <Topplots6 />
                 </div>
 
-                <div className="flex md:ml-1 md:mt-32 mt-28 md:pt-8 pt-6">
+                <div className="flex md:ml-1 md:mt-32 mt-28 md:pt-8 pt-6 relative">
+                    {/* Line */}
+
+                    <div className="absolute 
+                w-96 
+                h-8
+                bg-black  
+                md:rotate-[55deg] 
+                rotate-[60deg] 
+                md:right-[-178%] 
+                right-[-219%] 
+                md:top-[-3%] 
+                top-[-15%] 
+                flex 
+                items-center 
+                justify-center 
+                rounded-md">
+                        <p className="text-white hidden  font-extrabold text-sm md:text-base tracking-wide bg-black px-2">
+                            MAIN ROAD
+                        </p>
+                    </div>
+
                     {[1, 2].map((col) => (
                         <div key={col}>
                             {plots
@@ -102,8 +122,10 @@ const Topplots1 = () => {
                                     );
                                 })}
                         </div>
+
                     ))}
                 </div>
+
                 <Park />
             </section>
         </>

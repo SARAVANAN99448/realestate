@@ -20,7 +20,13 @@ const LocationAdvantages = () => {
       "Nurture International School – 9 km",
     ],
     Healthcare: ["Nearest Hospital – Quick 3 km distance for medical needs",
-      "24/7 emergency services accessible within minutes"],
+      "24/7 emergency services accessible within minutes",
+    "Holy Cross Hospital",
+    "Annapurna Hospital",
+    "Ashraya Hospital",
+    "Dr Santhosh Urs Healthcare",
+    "KRS Multispeciality Hospital Pvt.Ltd"
+    ],
     "Nature Retreats": [
       "Mullayangiri – Karnataka's highest peak only 1.5 km away",
       "Kallathigiri Falls – 52 km scenic drive",

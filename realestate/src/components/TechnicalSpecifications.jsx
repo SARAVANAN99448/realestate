@@ -23,7 +23,6 @@ const TechnicalSpecifications = () => {
           <li className="leading-relaxed">Sewage Treatment Plant – Treated Water for all Green Bodies</li>
           <li className="leading-relaxed">Closed Concrete Storm Water Drains with Pavers and Kerb Stones</li>
           <li className="leading-relaxed">Paved Footpaths and Tree Lined Avenues</li>
-          <li className="leading-relaxed">Provision for Piped Gas Supply</li>
           <li className="leading-relaxed">Rain Water Harvesting</li>
           <li className="leading-relaxed">Solar Lighting for Common Areas</li>
         </ul>

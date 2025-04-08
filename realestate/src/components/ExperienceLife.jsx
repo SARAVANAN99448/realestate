@@ -28,8 +28,7 @@ const ExperienceLife = () => {
                 <p className="mt-4 text-green-700 text-[17px]">
                     Thoughtfully designed with ample open spaces, Swarnagiri features 229
                     plots in various dimensions (30×40, 30×50, 40×60 sq. ft.). Residents
-                    will enjoy the exclusive privilege of an adjacent World Class Club
-                    with luxury amenities currently under development.
+                    will enjoy the exclusive privilege of an adjacent with luxury amenities currently under development.
                 </p>
             </div>
         </div>
@@ -43,7 +42,7 @@ const ExperienceLife = () => {
                     Nestled in the Chandra Drona Range of the Western Ghats, Swarnagiri offers a breathtaking panoramic view of pristine nature. Located near Chikkamagaluru city center, this DTCP-approved residential layout spans 64,749 sq. mts. of lush greenery.
                 </p>
                 <p className="mt-4 text-green-700 text-[17px]">
-                    Thoughtfully designed with ample open spaces, Swarnagiri features 229 plots in various dimensions (30×40, 30×50, 40×60 sq. ft.). Residents will enjoy the exclusive privilege of an adjacent World Class Club with luxury amenities currently under development.
+                    Thoughtfully designed with ample open spaces, Swarnagiri features 229 plots in various dimensions (30×40, 30×50, 40×60 sq. ft.). Residents will enjoy the exclusive privilege of an adjacent  with luxury amenities currently under development.
                 </p>
             </div>
 

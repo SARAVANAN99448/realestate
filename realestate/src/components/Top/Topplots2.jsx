@@ -79,8 +79,16 @@ const Topplots2 = () => {
             </div>
             {/* Line */}
 
-            <div className="absolute w-64 h-0 border-t-4 border-black border-dashed md:rotate-[57deg] rotate-[61deg] md:right-[-28%] right-[-49%] top-[10%] md:top-[20%]"></div>
-            <h1 className='absolute rotate-[60deg] md:top-[0%] top-[-115%] md:left-[50%] left-[30%] font-bold  right-[-28%]'>Main road</h1>
+            {/* Diagonal MAIN ROAD */}
+            <div className="absolute md:w-60 w-44 h-8 bg-black border-t-[6px] border-dashed border-black md:rotate-[57deg] rotate-[61deg] md:right-[-27%] right-[-40%] top-[10%] md:top-[1%] flex items-center justify-center rounded-md">
+
+                {/* Centered Text */}
+                <p className="text-white hidden font-extrabold md:text-base text-[16px] tracking-wide bg-black px-4">
+                    MAIN ROAD
+                </p>
+            </div>
+{/* 
+            <h1 className='absolute rotate-[60deg] md:top-[0%] top-[-115%] md:left-[50%] left-[30%] font-bold  right-[-28%]'>Main road</h1> */}
 
         </section>
     );

@@ -13,7 +13,7 @@ const BottomContact = () => {
           <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
             <h3 className="text-xl font-semibold text-gray-700 mb-2">Visit Our Site Office</h3>
             <p className="flex items-center mt-2 text-gray-700">
-              <FaPhoneAlt className="mr-2 text-blue-600" /> +91 90195 40540
+              <FaPhoneAlt className="mr-2 text-blue-600" /> +91 7349633544
             </p>
             <p className="flex items-center mt-1 text-gray-700">
               <FaEnvelope className="mr-2 text-red-600" /> info@leelaventures.com

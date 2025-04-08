@@ -30,7 +30,7 @@ const App = () => {
         <section className="relative  " >
 
             <Topplots1 />
-            <section className="overflow-x-auto ">
+            <section className="overflow-x-auto md:overflow-x-visible  ">
                 {/* Main road */}
                 <Mainroad />
                 <div className="flex justify-center md:ml-0 ml-40 md:pl-0 pl-7 relative ">
@@ -68,7 +68,7 @@ const App = () => {
                     <Bottom11 />
                     <Bottom12 />
                 </div>
-                <div>
+                <div className=" ">
                     <Parkbottom/>
                 </div>
             </section>

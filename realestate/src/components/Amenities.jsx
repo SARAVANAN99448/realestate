@@ -1,38 +1,27 @@
 import React, { useState } from "react";
 import {
   FaHotel, FaBuilding, FaChalkboard, FaUtensils, FaDumbbell, FaSpa,
-  FaLeaf, FaTableTennis, FaChild, FaCar, FaMosque, FaFutbol, FaSwimmer,
+  FaLeaf, FaTree, FaChild, FaCar, FaMosque, FaFutbol, FaTableTennis,
   FaGlassCheers, FaBirthdayCake, FaChair, FaChess, FaGolfBall
 } from "react-icons/fa";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 const Amenities = () => {
-  const [activeTab, setActiveTab] = useState("Indoor Amenities");
+  const [activeTab, setActiveTab] = useState("Outdoor Amenities");
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const tabs = ["Indoor Amenities", "Outdoor Amenities", "Recreation & Wellness", "Community Spaces"];
+  const tabs = ["Outdoor Amenities", "Recreation & Wellness", "Community Spaces"];
   const amenities = {
-    "Indoor Amenities": [
-      { icon: <FaHotel size={40} className="text-green-700" />, name: "Luxury Suites" },
-      { icon: <FaBuilding size={40} className="text-green-700" />, name: "Indoor Badminton Court" },
-      { icon: <FaChalkboard size={40} className="text-green-700" />, name: "Conference Hall" },
-      { icon: <FaUtensils size={40} className="text-green-700" />, name: "Food Courts & Lounge Bar" },
-      { icon: <FaDumbbell size={40} className="text-green-700" />, name: "Fully Equipped Gymnasium" },
-      { icon: <FaSpa size={40} className="text-green-700" />, name: "Spa & Beauty Salon" },
-    ],
     "Outdoor Amenities": [
-      { icon: <FaSwimmer size={40} className="text-green-700" />, name: "Swimming Pool" },
-      { icon: <FaTableTennis size={40} className="text-green-700" />, name: "Outdoor Tennis Courts" },
+      { icon: <FaTree size={40} className="text-green-700" />, name: "Park" },
       { icon: <FaMosque size={40} className="text-green-700" />, name: "Yoga & Meditation Zones" },
       { icon: <FaChild size={40} className="text-green-700" />, name: "Children's Play Area" },
       { icon: <FaCar size={40} className="text-green-700" />, name: "Ample Car Parking" },
     ],
     "Recreation & Wellness": [
       { icon: <FaFutbol size={40} className="text-green-700" />, name: "Meditation Zones" },
-      { icon: <FaDumbbell size={40} className="text-green-700" />, name: "Fitness Center" },
-      { icon: <FaSwimmer size={40} className="text-green-700" />, name: "Children's Wading Area" },
+      { icon: <FaTableTennis size={40} className="text-green-700" />, name: "Play Area" },
       { icon: <FaMosque size={40} className="text-green-700" />, name: "Yoga & Aerobics Studio" },
-      { icon: <FaChess size={40} className="text-green-700" />, name: "Table Tennis, Carrom & Chess" },
     ],
     "Community Spaces": [
       { icon: <FaBirthdayCake size={40} className="text-green-700" />, name: "Events & Celebrations" },

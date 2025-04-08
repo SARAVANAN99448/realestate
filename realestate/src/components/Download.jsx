@@ -65,7 +65,7 @@ const DownloadButton = () => {
     <>
       {/* Download Button */}
       <button
-        className={`fixed bottom-10 left-10 text-[16px] bg-[#0D542B] text-white px-5 py-3 md:px-5 md:py-3 rounded-full shadow-lg hover:bg-[#fb9906] cursor-pointer transition z-50 ${
+        className={`fixed md:bottom-10 bottom-10 md:left-10 left-5 text-[16px] bg-[#0D542B] text-white px-3 py-3 md:px-5 md:py-3 rounded-full shadow-lg hover:bg-[#fb9906] cursor-pointer transition z-50 ${
           isSticky ? "block" : "hidden"
         }`}
         onClick={() => setShowForm(true)}

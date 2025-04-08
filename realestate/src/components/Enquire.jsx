@@ -51,11 +51,11 @@ const EnquireNow = () => {
     <>
       {/* WhatsApp + Enquire Now Buttons */}
       {isSticky && (
-        <div className="fixed bottom-10 right-10 flex gap-3 z-50">
+        <div className="fixed md:bottom-10 bottom-10 md:right-10 right-3  flex gap-3 z-50">
           {/* Enquire Now Button */}
           <button
             onClick={() => setIsOpen(true)}
-            className="bg-[#0D542B] text-white px-5 py-3 rounded-full shadow-lg hover:bg-[#fb9906] transition text-[16px]"
+            className="bg-[#0D542B] text-white md:px-5 px-3  py-3 rounded-full shadow-lg hover:bg-[#fb9906] transition text-[16px]"
           >
             Enquire Now
           </button>

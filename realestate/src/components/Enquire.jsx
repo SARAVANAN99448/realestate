@@ -62,7 +62,7 @@ const EnquireNow = () => {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/919999999999" // <-- Replace with your actual number
+            href="https://wa.me/917349633544" // <-- Replace with your actual number
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition flex items-center justify-center"

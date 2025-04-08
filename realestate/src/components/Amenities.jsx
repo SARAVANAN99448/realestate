@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   FaHotel, FaBuilding, FaChalkboard, FaUtensils, FaDumbbell, FaSpa,
   FaLeaf, FaTree, FaChild, FaCar, FaMosque, FaFutbol, FaTableTennis,
-  FaGlassCheers, FaBirthdayCake, FaChair, FaChess, FaGolfBall
+  FaGlassCheers, FaBirthdayCake, FaChair, FaChess, FaGolfBall,FaLandmark
 } from "react-icons/fa";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
@@ -24,9 +24,8 @@ const Amenities = () => {
       { icon: <FaMosque size={40} className="text-green-700" />, name: "Yoga & Aerobics Studio" },
     ],
     "Community Spaces": [
-      { icon: <FaBirthdayCake size={40} className="text-green-700" />, name: "Events & Celebrations" },
-      { icon: <FaGlassCheers size={40} className="text-green-700" />, name: "Cultural Gatherings" },
-      { icon: <FaChair size={40} className="text-green-700" />, name: "BBQ & Picnic Areas" },
+      { icon: <FaLandmark size={40} className="text-green-700" />, name: "Temple" },
+      { icon: <FaTree size={40} className="text-green-700" />, name: "Park" },
       { icon: <FaChild size={40} className="text-green-700" />, name: "Children's Playground" },
       { icon: <FaLeaf size={40} className="text-green-700" />, name: "Relaxation Corners" },
     ],

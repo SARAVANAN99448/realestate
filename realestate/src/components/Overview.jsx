@@ -29,7 +29,7 @@ const Overview = () => {
           },
           {
             icon: <FaWater size={40} className="text-green-700" />,
-            text: "World Class Club — Upcoming facility adjacent to the property featuring lavish lifestyle amenities for residents",
+            text: "Lake View Plots — Premium plots offering serene views of the lake, perfect for building your dream home amidst nature's tranquility",
           },
           {
             icon: <FaBuilding size={40} className="text-green-700" />,

@@ -41,7 +41,7 @@ function Navbar() {
 
         {/* Center - Desktop Menu (No Change) */}
         <div className="hidden md:flex space-x-6 text-lg items-center">
-          <a href="#home" className="font-semibold cursor-pointer hover:underline">Home</a>
+          <a href="#hero-section" className="font-semibold cursor-pointer hover:underline">Home</a>
           <a href="#overview" className="font-semibold cursor-pointer hover:underline">Overview</a>
           <a href="#amenities" className="font-semibold cursor-pointer hover:underline">Amenities</a>
           <a href="#location" className="font-semibold cursor-pointer hover:underline">Location</a>
@@ -78,7 +78,7 @@ function Navbar() {
 
             {/* Menu Links */}
             <div className="flex flex-col items-start space-y-6 mt-12">
-              <a href="#home" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Home</a>
+              <a href="#hero-section" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Home</a>
               <a href="#overview" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Overview</a>
               <a href="#amenities" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Amenities</a>
               <a href="#location" className="font-semibold hover:underline cursor-pointer" onClick={() => setIsOpen(false)}>Location</a>

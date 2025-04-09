@@ -56,7 +56,7 @@ const Team = () => {
               />
             </div>
             <h3 className="mt-4 font-bold text-[#fb9906]">{member.name}</h3>
-            <p className="text-gray-700">{member.role}</p>
+            <p className="text-black font-semibold">{member.role}</p>
             <p className="text-gray-700">{member.company}</p>
           </div>
         ))}

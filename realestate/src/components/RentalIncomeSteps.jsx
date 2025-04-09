@@ -10,7 +10,7 @@ const RentalIncomeSteps = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto md:mt-20 mt-10">
+    <div className="bg-gray-900 text-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto md:mt-20 mt-10 ">
       <h2 className="text-3xl font-bold text-yellow-400 text-center">
         5 Simple Steps to Guaranteed Rental Income from Your Dream Villa
       </h2>

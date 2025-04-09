@@ -15,7 +15,7 @@ const TechnicalSpecifications = () => {
       {/* Right Side - Text */}
       <div className="md:w-1/2 w-full md:pl-8 mt-4 md:mt-0 text-center md:text-left">
         <h2 className="md:text-2xl text-xl  font-bold text-green-800">Technical Specifications - First time in Chikkamagaluru</h2>
-        <ul className="list-disc list-outside pl-6 mt-4 text-green-700 text-[17px] space-y-2">
+        <ul className="list-disc list-outside pl-6 mt-4 text-green-700 text-[16px] md:text-[17px] space-y-2">
           <li className="leading-relaxed">Underground Power Supply through Separate Concrete Duct with LT/HT Cables</li>
           <li className="leading-relaxed">Aesthetically Designed Street Lighting with LED Lights</li>
           <li className="leading-relaxed">Unlimited Water Supply through UPVC Pipes and Fittings with Storage Capacity of about 1,00,000 Lakh Liters and Sump & Overhead Watertank</li>

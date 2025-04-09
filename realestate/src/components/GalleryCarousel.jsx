@@ -4,27 +4,12 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import c1 from "../assets/images/c1.png";
-import c2 from "../assets/images/c2.png";
-import c3 from "../assets/images/c3.png";
-import c4 from "../assets/images/c4.png";
-import c5 from "../assets/images/c5.png";
-import c6 from "../assets/images/c6.png";
-import c7 from "../assets/images/c7.png";
-import c8 from "../assets/images/c8.png";
-import c9 from "../assets/images/c9.png";
-import c10 from "../assets/images/c10.png";
-import c11 from "../assets/images/c11.png";
-import c12 from "../assets/images/c12.png";
-import c13 from "../assets/images/c13.png";
-import c14 from "../assets/images/c14.png";
-import c15 from "../assets/images/c15.png";
-import c16 from "../assets/images/c16.png";
-import c17 from "../assets/images/c17.png";
-import c18 from "../assets/images/c18.png";
+import g1 from "../assets/images/g1.png";
+import g2 from "../assets/images/g2.png";
+import g3 from "../assets/images/g3.png";
 import "../../src/global.css";
 
-const images = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18];
+const images = [g1, g2, g3,];
 
 const GalleryCarousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);

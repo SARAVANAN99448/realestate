@@ -18,7 +18,7 @@ const InvestSwarnagiri = () => {
         <h2 className="md:text-2xl text-xl font-bold text-green-800">
           Why should you Invest in SWARNAGIRI
         </h2>
-        <ul className="list-disc md:list-inside list-outside md:pl-0 pl-6 mt-4 text-green-700 text-[16px] space-y-2">
+        <ul className="list-disc md:list-inside list-outside md:pl-0 pl-6 mt-4 text-green-700 text-[16px] md:text-[17px] space-y-2">
           <li className="leading-relaxed md:pl-0 pl-2">INVEST LOW, GAIN HIGH</li>
           <li className="leading-relaxed md:pl-0 pl-2">MUNICIPAL PROPERTY BY 2021</li>
           <li className="leading-relaxed md:pl-0 pl-2">4 DIFFERENT WATER SOURCES</li>

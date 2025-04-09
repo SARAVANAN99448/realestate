@@ -10,12 +10,12 @@ const About = () => {
       </h2>
 
       {/* Description */}
-      <p className="mt-4 text-gray-700 text-[13px] md:text-[15px]">
+      <p className="mt-4 text-gray-700 text-[17px] md:text-[18px]">
         Leelaa Ventures, since its inception, crafts real estate developments with integrity, ingenuity, and innovation, striving for functional living spaces that serve as benchmarks. Our customer-centric approach, built on trust, quality, and transparency, is reinforced through comprehensive planning and ethical construction practices.
       </p>
 
       {/* Tagline */}
-      <p className="mt-2 text-green-600 font-semibold text-[15px]">
+      <p className="mt-2 text-green-600 font-semibold text-[17px] md:text-[18px]">
         Leelaa Ventures - Creating worthy assets that stand the test of time
       </p>
 

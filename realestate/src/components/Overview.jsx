@@ -6,10 +6,10 @@ const Overview = () => {
     <section className="max-w-5xl mx-auto p-6 mt-10 overflow-hidden " id="overview">
       <h2 className="md:text-3xl text-2xl font-extrabold text-center text-[#fb9906] mb-2">Overview</h2>
       <hr className="w-16 border-green-700 mx-auto mb-4" />
-      <p className="text-center text-gray-700 mb-4 md:text-[18px]  text-[17px]">
+      <p className="text-center text-gray-700 mb-4 md:text-[18px]  text-[18px]">
         Own a retreat at Swarnagiri—an exclusive plotted development nestled in the foothills of Chandra Drona Range. Life here is not just living; it's a harmonious blend with nature.
       </p>
-      <p className="text-center text-gray-700 mb-6 md:text-[18px] text-[17px]">
+      <p className="text-center text-gray-700 mb-6 md:text-[18px] text-[18px]">
         Swarnagiri offers 229 independent plots of various dimensions, including 9 x 12m, 9 x 15m, and 12 x 18m options, with breathtaking panoramic views the perfect canvas for your dream mountain home.
       </p>
 

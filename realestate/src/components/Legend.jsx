@@ -10,6 +10,7 @@ const Legend = () => {
         <LegendItem color="bg-[#e3d91f]" size="9.0M x 15.0M" dimension="30ft x 50ft" />
         <LegendItem color="bg-[#7152bf]" size="12.0M x 18.0M" dimension="40ft x 50ft" />
         <LegendItem color="bg-[#9c4e1a]" size="ODD SITES" />
+        <LegendItem color="bg-red-500" size="SOLD PLOTS" />
       </div>
     </div>
   );

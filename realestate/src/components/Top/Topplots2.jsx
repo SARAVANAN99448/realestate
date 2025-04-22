@@ -86,6 +86,10 @@ const Topplots2 = () => {
                 <p className="text-white hidden font-extrabold md:text-base text-[16px] tracking-wide bg-black px-4">
                     MAIN ROAD
                 </p>
+                <p className="text-white absolute top-[-2%] font-extrabold md:text-base text-[16px] tracking-wide bg-black px-4">
+                chikkamagaluru →
+                </p>
+
             </div>
 {/* 
             <h1 className='absolute rotate-[60deg] md:top-[0%] top-[-115%] md:left-[50%] left-[30%] font-bold  right-[-28%]'>Main road</h1> */}

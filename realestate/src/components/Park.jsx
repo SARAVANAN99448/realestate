@@ -9,12 +9,12 @@ const Park = () => {
             </div>
             {/* Road  */}
             <div className=" md:right-[50%] right-[50%]  md:bottom-[15.5%] bottom-[12%] absolute font-bold ">
-                <p className='md:text-[16px] text-[12px]'>WIDE ROAD</p>
+                <p className='md:text-[16px] text-[12px]'>30 ft ROAD</p>
             </div>
 
             {/* Road  */}
             <div className=" right-[46%] md:top-[43%] top-[52%]  md:right-[46%] w-full rotate-270 absolute font-bold ">
-                <p className='md:text-[16px] text-[12px]'>WIDE ROAD</p>
+                <p className='md:text-[16px] text-[12px]'>30 ft ROAD</p>
             </div>
 
             {/* Line */}
@@ -35,9 +35,12 @@ const Park = () => {
                 items-center 
                 justify-center 
                 rounded-md">
-                <p className="text-white font-extrabold text-sm md:text-base tracking-wide bg-black px-2">
+                    
+                    <p className='text-white font-extrabold absolute top-1 left-[-30%]' >← Hirekolale</p>
+                <p className="text-white  font-extrabold text-sm md:text-base tracking-wide bg-black px-2">
                     MAIN ROAD
                 </p>
+                {/* <p className='text-white font-semibold absolute top-1 right-[-10%]' >chikkamagaluru →</p> */}
             </div>
 
             {/* <h1 className='absolute hidden md:block rotate-[58deg] md:top-[50%] top-[50%] md:left-[7%] left-[100%] font-bold  right-[10%]'>Main road</h1> */}

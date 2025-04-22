@@ -9,7 +9,7 @@ import Topplots6 from "../Top/Topplots6";
 import Park from "../Park";
 import Hero from "../Hero";
 import ClubHouse from "../Clubhouse";
-
+import Legend from "../Legend"
 const plots = [
     { id: 158, color: "bg-[#9c4e1a]", column: 1, extraClass: "topplot1", height: "md:h-[25%] h-[24.7%]" },
     { id: 159, color: "bg-[#7152BF]", column: 1, height: "md:h-15 h-14" },
@@ -59,13 +59,14 @@ const Topplots1 = () => {
                 Plots for booking
             </h1>
             <hr className="w-16 border-green-700 mx-auto mb-4" />
+            <Legend/>
             <h1 className="md:hidden text-center text-[15px] text-black font-semibold">
                 Scroll right to view all the plots
             </h1>
             <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5 overflow-x-auto relative">
-
+            
                 <div className="md:left-[49.9%] left-[65%] md:top-[67%] top-[68.8%] rotate-270 absolute font-bold">
-                    <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
+                    <p className="md:text-[16px] text-[12px]">30 ft ROAD</p>
                 </div>
 
                 <div>

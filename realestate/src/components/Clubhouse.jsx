@@ -41,7 +41,7 @@ const ClubHouse = () => {
               clipPath: "polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)",
             }}
           />
-          <h1 className="relative text-xl font-bold tracking-widest">CLUB HOUSE</h1>
+          <h1 className="relative text-xl font-bold tracking-widest">COMMERCIAL PROPERTY</h1>
         </div>
       </div>
     </section>

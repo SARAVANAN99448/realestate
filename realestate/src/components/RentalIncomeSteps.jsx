@@ -5,7 +5,7 @@ const RentalIncomeSteps = () => {
     { step: "STEP 1", text: "Buy a site at Swarnagiri" },
     { step: "STEP 2", text: "Design your dream villa" },
     { step: "STEP 3", text: "Construct your villa at Swarnagiri" },
-    { step: "STEP 4", text: "Lease back your villa with us" },
+    { step: "STEP 4", text: "Lease back your villa" },
     { step: "STEP 5", text: "Enjoy guaranteed rental income" },
   ];
 

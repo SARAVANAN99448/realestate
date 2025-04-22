@@ -16,7 +16,6 @@ const Amenities = () => {
       { icon: <FaTree size={40} className="text-green-700" />, name: "Park" },
       { icon: <FaMosque size={40} className="text-green-700" />, name: "Yoga & Meditation Zones" },
       { icon: <FaChild size={40} className="text-green-700" />, name: "Children's Play Area" },
-      { icon: <FaCar size={40} className="text-green-700" />, name: "Ample Car Parking" },
     ],
     "Recreation & Wellness": [
       { icon: <FaFutbol size={40} className="text-green-700" />, name: "Meditation Zones" },

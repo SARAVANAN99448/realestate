@@ -16,6 +16,10 @@ const Overview = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
+            icon: <FaBuilding size={40} className="text-green-700" />,
+            text: "Legally Approved — Complete DTCP approval with all legal clearances in place",
+          },
+          {
             icon: <FaLeaf size={40} className="text-green-700" />,
             text: "Weekend Getaway & Investment Opportunity — Build your villa or cottage for personal use or rent it out as a homestay for lucrative returns",
           },
@@ -25,16 +29,13 @@ const Overview = () => {
           },
           {
             icon: <FaRoad size={40} className="text-green-700" />,
-            text: "Expansive Natural Beauty — Sprawling across 64,749 sq. meters (696,960 sq. ft.) of pristine greenery in the Western Ghats",
+            text: "Expansive Natural Beauty — Sprawling across 16 acres of pristine greenery in the Western Ghats",
           },
           {
             icon: <FaWater size={40} className="text-green-700" />,
             text: "Lake View Plots — Premium plots offering serene views of the lake, perfect for building your dream home amidst nature's tranquility",
           },
-          {
-            icon: <FaBuilding size={40} className="text-green-700" />,
-            text: "Legally Approved — Complete DTCP approval with all legal clearances in place",
-          },
+          
           {
             icon: <FaFileSignature  size={40} className="text-green-700" />,
             text: "Ready For Registration — Build your custom home in one of Karnataka's most picturesque locations",

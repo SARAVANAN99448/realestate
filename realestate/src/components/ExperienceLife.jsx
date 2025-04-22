@@ -23,7 +23,7 @@ const ExperienceLife = () => {
                     Nestled in the Chandra Drona Range of the Western Ghats, Swarnagiri
                     offers a breathtaking panoramic view of pristine nature. Located near
                     Chikkamagaluru city center, this DTCP-approved residential layout
-                    spans 64,749 sq. mts. of lush greenery.
+                    spans 16 acres of lush greenery.
                 </p>
                 <p className="mt-4 text-green-700 text-[18px]">
                     Thoughtfully designed with ample open spaces, Swarnagiri features 229
@@ -39,7 +39,7 @@ const ExperienceLife = () => {
             <div className="md:w-1/2 w-full md:pr-8 mt-4 md:mt-0 text-center md:text-left">
 
                 <p className="mt-4 text-green-700 md:text-[18px] text-[18px]">
-                    Nestled in the Chandra Drona Range of the Western Ghats, Swarnagiri offers a breathtaking panoramic view of pristine nature. Located near Chikkamagaluru city center, this DTCP-approved residential layout spans 64,749 sq. mts. of lush greenery.
+                    Nestled in the Chandra Drona Range of the Western Ghats, Swarnagiri offers a breathtaking panoramic view of pristine nature. Located near Chikkamagaluru city center, this DTCP-approved residential layout spans 16 acres of lush greenery.
                 </p>
                 <p className="mt-4 text-green-700 text-[18px] md:text-[18px]">
                     Thoughtfully designed with ample open spaces, Swarnagiri features 229 plots in various dimensions (30×40, 30×50, 40×60 sq. ft.). Residents will enjoy the exclusive privilege of an adjacent  with luxury amenities currently under development.

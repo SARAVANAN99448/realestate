@@ -23,11 +23,10 @@ const InvestSwarnagiri = () => {
           <li className="leading-relaxed md:pl-0 pl-2">MUNICIPAL PROPERTY BY 2021</li>
           <li className="leading-relaxed md:pl-0 pl-2">4 DIFFERENT WATER SOURCES</li>
           <li className="leading-relaxed md:pl-0 pl-2">
-            GOVERNMENT VALUATION & FAIR & MARKET PRICE
+            FAIR MARKET PRICE
           </li>
           <li className="leading-relaxed md:pl-0 pl-2">
-            NEXT TO CDA (CHIKMAGALUR DEVELOPMENT AUTHORITY) LAYOUT SPREAD ACROSS 193 ACRES. 
-            HENCE APPRECIATION IN THE CAPITAL VALUE IS GUARANTEED
+            ABUTTING ATAL BIHARI VAJPAYEE LAYOUT
           </li>
           <li className="leading-relaxed md:pl-0 pl-2">
             HIGH RENTAL REVENUE GUARANTEED FOR VILLAS BUILT AT SWARNAGIRI

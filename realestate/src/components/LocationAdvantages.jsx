@@ -25,15 +25,15 @@ const LocationAdvantages = () => {
     "Annapurna Hospital",
     "Ashraya Hospital",
     "Dr Santhosh Urs Healthcare",
-    "KRS Multispeciality Hospital Pvt.Ltd"
+    "KRS Multispeciality Hospital"
     ],
     "Nature Retreats": [
-      "Mullayangiri – Karnataka's highest peak only 1.5 km away",
+      "Mullayangiri – Karnataka's highest peak only 15 km away",
       "Kallathigiri Falls – 52 km scenic drive",
       "Manikydhara Falls – 34 km perfect for day trips",
       "Kemmanagundi – 62 km mountain resort",
       "Kudremukh – 85 km national park beauty",
-      "Hirekolale lake"
+      "Hirekolale lake – 4.6 km a perfect photoshoot destination"
     ],
     "Religious Towns": [
       "Belur – Historic temple town 25 km away",
@@ -43,6 +43,7 @@ const LocationAdvantages = () => {
       "Sringeri – 90 km renowned pilgrimage site",
       "Kalasa – 92 km for temple enthusiasts",
       "Horanadu – 100 km sacred destination",
+      "Dattapeeta – 25 km hilltop pilgrimage site"
     ],
     "Clubs & Resorts": [
       "Chikkamagaluru Club – 5 km social networking",

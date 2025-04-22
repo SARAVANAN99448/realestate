@@ -41,43 +41,43 @@ const Bottom1 = () => {
         <div className="flex relative">
              {/* Road  */}
              <div className="   rotate-270 absolute min-w-full md:top-[-10%] top-10 md:left-[44.5%] left-14 font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px] w-full">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className="   rotate-270 min-w-full absolute md:top-[-10%] top-10 md:left-[89.5%] left-[102%]   font-bold">
-                <p className="md:text-[16px] w-full text-[12px]">WIDE ROAD</p>
+                <p className="md:text-[16px] w-full text-[12px]">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className="   rotate-270 absolute min-w-full md:top-[-10%] top-10 md:left-[131%] left-[162%]  md:ml-2 font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px] w-full">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className="rotate-270 min-w-full absolute md:top-[-10%] top-10 md:left-[177%] left-[221%]   md:ml-2  font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px] w-full">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className=" min-w-full  rotate-270 absolute  md:top-[-10%] top-10 md:left-[225%] left-[281%] font-bold">
-                <p className="md:text-[16px] w-full text-[12px]">WIDE ROAD</p>
+                <p className="md:text-[16px] w-full text-[12px]">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className=" min-w-full  rotate-270 absolute  md:top-[-10%] top-10 md:left-[270%] left-[340%] font-bold">
-                <p className="md:text-[16px] w-full text-[12px]">WIDE ROAD</p>
+                <p className="md:text-[16px] w-full text-[12px]">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className="rotate-270 absolute min-w-full md:top-[200%] top-[240%] md:left-[129.5%]  left-[163%]  md:ml-2 font-bold">
-                <p className="md:text-[16px] text-[12px] w-full">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px] w-full">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className="  rotate-270 min-w-full absolute md:top-[200%] top-[240%] md:left-[182%] left-[221%] font-bold">
-                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px]">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className=" rotate-270 min-w-full absolute md:top-[200%] top-[240%] md:left-[227%] left-[280%] font-bold">
-                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px]">30 ft ROAD</p>
             </div>
             {/* Road  */}
             <div className="  rotate-270 min-w-full absolute md:top-[200%] top-[240%] md:left-[272%] left-[340%] font-bold">
-                <p className="md:text-[16px] text-[12px]">WIDE ROAD</p>
+                <p className="md:text-[16px] text-[12px]">30 ft ROAD</p>
             </div>
 
             {/* ✅ First Column */}

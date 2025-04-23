@@ -7,6 +7,7 @@ import ExperienceLife from "./ExperienceLife";
 import InvestSwarnagiri from "./InvestSwarnagiri";
 import TechnicalSpecifications from "./TechnicalSpecifications";
 import vedio from "../assets/images/Swarnagiri.mp4";
+import TextMarquee from "./TextMarquee";
 
 export default function Hero() {
     return (
@@ -44,7 +45,7 @@ export default function Hero() {
 
                 </div>
             </div>
-
+            <TextMarquee/>  
             <Overview />
             <Chikkamagaluru />
             <ExperienceLife />

@@ -8,14 +8,11 @@ const getResponse = (msg) => {
     if (lowerMsg.includes("hello") || lowerMsg.includes("hi")) {
       return "Hi there! How can I help you today?";
     }
-    if (lowerMsg.includes("price")) {
-      return "Our prices range from $10 to $100, depending on the product or service.";
-    }
     if (lowerMsg.includes("hours")) {
       return "We are open from 9 AM to 6 PM, Monday to Friday.";
     }
     if (lowerMsg.includes("location") || lowerMsg.includes("address")) {
-      return "We are located at 123 Main Street, City, Country.";
+      return "Swarnagiri, Naraganhalli, en route to Hirekolale Lake, Chikkamagaluru";
     }
     if (lowerMsg.includes("thank you") || lowerMsg.includes("thanks")) {
       return "You're welcome! Let me know if you need anything else.";
@@ -24,7 +21,7 @@ const getResponse = (msg) => {
       return "Sure, I can help! What do you need assistance with?";
     }
     if (lowerMsg.includes("contact")) {
-      return "You can contact us via email at support@company.com or call us at +123456789.";
+      return "You can contact us via email at info@leelaventures.com or call us at +91 9663366119.";
     }
     return "I'm not sure I understand. Can you please rephrase your question?";
   };

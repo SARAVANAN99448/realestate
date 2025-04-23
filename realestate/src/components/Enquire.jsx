@@ -55,7 +55,7 @@ const EnquireNow = () => {
           {/* Enquire Now Button */}
           <button
             onClick={() => setIsOpen(true)}
-            className="bg-[#0D542B] text-white md:px-5 px-3  py-3 rounded-full shadow-lg hover:bg-[#fb9906] transition text-[16px]"
+            className="bg-[#0D542B] cursor-pointer text-white md:px-5 px-3  py-3 rounded-full shadow-lg hover:bg-[#fb9906] transition text-[16px]"
           >
             Enquire Now
           </button>

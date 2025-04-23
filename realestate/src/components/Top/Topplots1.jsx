@@ -60,7 +60,7 @@ const Topplots1 = () => {
             </h1>
             <hr className="w-16 border-green-700 mx-auto mb-4" />
             <Legend/>
-            <h1 className="md:hidden text-center text-[15px] text-black font-semibold">
+            <h1 className="md:hidden text-center text-[15px] mt-5 text-black font-semibold">
                 Scroll right to view all the plots
             </h1>
             <section className="flex justify-center md:pl-10 h-fit mt-20 pl-5 overflow-x-auto relative">

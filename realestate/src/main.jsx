@@ -5,8 +5,10 @@ import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Contact from './components/Contact.jsx'
 import AdminDashboard from './components/Admin/Admin.jsx'
 import AdminLogin from './components/AdminLogin.jsx'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 createRoot(document.getElementById('root')).render(
+  <ParallaxProvider>
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}></Route>
@@ -15,4 +17,5 @@ createRoot(document.getElementById('root')).render(
       <Route path="/admin-login" element={<AdminLogin />} />
     </Routes>
   </BrowserRouter>
+  </ParallaxProvider>
 )

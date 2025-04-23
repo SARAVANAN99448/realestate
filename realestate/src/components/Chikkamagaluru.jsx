@@ -13,7 +13,7 @@ const Chikkamagaluru = () => {
       ></div>
 
       {/* Overlay Content */}
-      <div className="text-center text-white relative md:px-20 px-10 text-[17px]">
+      <div className="text-center text-white relative md:px-20 px-10 text-[17px] md:text-[20px]">
         <h2 className="md:text-3xl text-2xl py-10  font-bold text-black">Chikkamagaluru : Fresh air forever</h2>
         <div className="border-4 cursor-pointer border-white rounded-xl px-6 py-4 bg-black/50 text-white text-center w-full mt-4 transition-all duration-300 hover:bg-green-900 hover:-translate-y-2">
           {/* <p>A coffee connoisseur's muse, a photographer's paradise, the land that introduced coffee to India and home to the tallest peak in Karnataka are some of the many synonyms that would describe the beauty of Chikkamagaluru.</p>

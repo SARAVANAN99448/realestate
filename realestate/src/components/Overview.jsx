@@ -15,6 +15,11 @@ const Overview = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
+          
+          {
+            icon: <FaFileSignature  size={40} className="text-green-700" />,
+            text: "Ready For Registration — Build your custom home in one of Karnataka's most picturesque locations",
+          },
           {
             icon: <FaBuilding size={40} className="text-green-700" />,
             text: "Legally Approved — Complete DTCP approval with all legal clearances in place",
@@ -36,10 +41,6 @@ const Overview = () => {
             text: "Lake View Plots — Premium plots offering serene views of the lake, perfect for building your dream home amidst nature's tranquility",
           },
           
-          {
-            icon: <FaFileSignature  size={40} className="text-green-700" />,
-            text: "Ready For Registration — Build your custom home in one of Karnataka's most picturesque locations",
-          },
         ].map((item, index) => (
           <div key={index} className="flex flex-row items-center bg-green-100 text-green-900 p-4 rounded-lg">
             <div className="mr-4">{item.icon}</div>

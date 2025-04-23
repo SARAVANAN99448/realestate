@@ -24,7 +24,7 @@ const About = () => {
         {[
           { number: '40+', label: 'Years Experience', icon: <Briefcase size={40} className="text-green-600" /> },
           { number: '229+', label: 'Available Plots', icon: <Map size={40} className="text-green-600" /> },
-          { number: '64,749', label: 'Square Meters Area', icon: <Ruler size={40} className="text-green-600" /> },
+          { number: '16', label: 'Acres', icon: <Ruler size={40} className="text-green-600" /> },
           { number: '100%', label: 'DTCP Approved', icon: <ShieldCheck size={40} className="text-green-600" /> },
           { number: '4+', label: 'Tourist Attractions Nearby', icon: <Landmark size={40} className="text-green-600" /> }
         ].map((item, index) => (
